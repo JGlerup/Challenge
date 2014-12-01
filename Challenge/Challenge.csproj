@@ -161,6 +161,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Content\master.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Contact.aspx" />
