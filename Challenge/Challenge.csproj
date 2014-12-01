@@ -165,11 +165,12 @@
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Contact.aspx" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\search54.svg" />
     <Content Include="Images\defaultVideo.png" />
     <Content Include="Images\phone_png.png" />
+    <Content Include="Images\searchbutton3.gif" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
