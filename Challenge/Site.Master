@@ -27,7 +27,6 @@
                         <a class="navbar-brand-bottom" runat="server" href="~/">GAME</a>
                         <a class="navbar-right-login" runat="server" href="~/Account/Login">LOGIN</a>
                         <a class="navbar-right-upload" runat="server" href="~/Profile/Upload">UPLOAD</a>
-                        <form method="get" action="http://www.mysite.com/search.php">
                             <table cellpadding="0px" cellspacing="0px">
                                 <tr>
                                     <td>
@@ -38,7 +37,6 @@
                                     </td>
                                 </tr>
                             </table>
-                        </form>
                         <a class="navbar-support" runat="server" href="~/Support">Support</a>
                     </div>
                 </div>
@@ -56,7 +54,6 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Challenge</p>
             </footer>

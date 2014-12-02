@@ -67,6 +67,7 @@ body {
 .underlined {
     text-decoration: underline;
     color: #fff;
+    font-size: 17px;
 }
 
 .home #videoTitel1, #videoTitel2, #videoTitel3 {
@@ -74,13 +75,25 @@ body {
     font-size: 14px;
 }
 
-.inline {
+
+/* HVID SECTION*/
+
+.home .content-white {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
-.marginRight {
+.home .inner-white {
+    width: 1000px;
+    margin: 0 auto;
 }
 
-
+.home .inner-left {
+    width: 500px;
+    color: #000;
+}
 
 
 /* Override the default bootstrap behavior where horizontal description lists 
