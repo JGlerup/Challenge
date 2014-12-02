@@ -43,7 +43,7 @@
             </div>
             <div class="nav">
                 <div class="navbar-bottom">
-                    <a class="navbar-content" runat="server" href="#">CONTACT</a>
+                    <a class="navbar-content" runat="server" href="~/Contact">CONTACT</a>
                     <a class="navbar-content" runat="server" href="#">NEWS</a>
                     <a class="navbar-content" runat="server" href="#">CHARITIES</a>
                     <a class="navbar-content" runat="server" href="#">CHALLENGES</a>
