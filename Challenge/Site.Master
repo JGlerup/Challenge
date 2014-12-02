@@ -30,7 +30,7 @@
                             <table cellpadding="0px" cellspacing="0px">
                                 <tr>
                                     <td>
-                                        <input type="text" name="zoom_query">
+                                        <input class="search-input" type="text" name="zoom_query">
                                     </td>
                                     <td>
                                         <input class="search" type="submit" value="">

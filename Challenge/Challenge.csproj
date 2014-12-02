@@ -168,8 +168,12 @@
     <Content Include="Content\home.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\search54.svg" />
+    <Content Include="Images\cash_receiving-50.png" />
     <Content Include="Images\defaultVideo.png" />
+    <Content Include="Images\groups-36.png" />
+    <Content Include="Images\image_file-48.png" />
     <Content Include="Images\phone_png.png" />
+    <Content Include="Images\search-48.png" />
     <Content Include="Images\searchbutton3.gif" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

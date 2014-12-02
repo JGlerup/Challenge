@@ -47,15 +47,15 @@
             <div class="content-white">
                 <div class="inner-white">
                     <div class="inner-left">
-                        <h2 class="">Get more libraries</h2>
-                        <p>
-                            NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
+                        <img class="donate" src="Images/cash_receiving-50.png" alt="Donate and give"/>
+                        <p class="home-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
-                        <p>
-                            <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                        </p>
+                        <img class="group" src="Images/groups-36.png" alt="Group" />
+                        <p class="home-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto </p>
                     </div>
                     <div class="inner-right">
+                        <img class="image" src="Images/image_file-48.png" alt="image" />
                     </div>
                 </div>
             </div>
