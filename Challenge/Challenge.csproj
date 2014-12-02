@@ -163,6 +163,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Content\master.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\upload.css" />
     <Content Include="favicon.ico" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\home.css" />
