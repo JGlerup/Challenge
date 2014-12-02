@@ -20,7 +20,7 @@ body {
 .home .content-blue {
     width: 1000px;
     margin: 0 auto;
-    height: 450px;
+    height: 535px;
 }
 
 .home div.blue {
@@ -35,7 +35,7 @@ body {
     float: left;
     width: 250px;
     position: absolute;
-    margin: 60px 0 0 14px;
+    margin: 52px 0 0 14px;
 }
 
 .home .phone {
@@ -45,7 +45,8 @@ body {
 
 .home .right {
     float: right;
-    width: 730px;
+    width: 700px;
+    margin-top: 36px;
 }
 
 /*VIDEOER*/
@@ -54,25 +55,45 @@ body {
     display: inline-block;
 }
 
-.home #videoDiv1 {
+.home #videoDiv1, #videoDiv2 {
     margin-right: 29px;
+    width: 200px;
 }
 
-.home #videoDiv2 {
-    margin-right: 29px;
+.home #videoDiv3 {
+    width: 200px;
 }
 
 .underlined {
     text-decoration: underline;
+    color: #fff;
+    font-size: 17px;
 }
 
-.inline {
+.home #videoTitel1, #videoTitel2, #videoTitel3 {
+    color: #fff;
+    font-size: 14px;
 }
 
-.marginRight {
+
+/* HVID SECTION*/
+
+.home .content-white {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
+.home .inner-white {
+    width: 1000px;
+    margin: 0 auto;
+}
 
+.home .inner-left {
+    width: 500px;
+    color: #000;
+}
 
 
 /* Override the default bootstrap behavior where horizontal description lists 
