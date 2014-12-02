@@ -34,7 +34,7 @@
                                         <input type="text" name="zoom_query">
                                     </td>
                                     <td>
-                                        <input type="submit" value="">
+                                        <input class="search" type="submit" value="">
                                     </td>
                                 </tr>
                             </table>

@@ -11,31 +11,55 @@ body {
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-    
+
+/*CONTENT*/
+.home .body-content {
 }
 
 
-div.content-blue {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+.home .content-blue {
+    width: 1000px;
+    margin: 0 auto;
+    height: 450px;
+}
+
+.home div.blue {
+    background-color: #2c3e50;
+    width: 100%;
+    box-shadow: 0px 2px 6px #414141;
+}
+
+/*TELEFON*/
+
+.home .left {
+    float: left;
+    width: 250px;
+    position: absolute;
+    margin: 60px 0 0 14px;
+}
+
+.home .phone {
+    box-shadow: 0px 2px 6px #414141;
+    border-radius: 23px;
+}
+
+.home .right {
+    float: right;
+    width: 730px;
+}
+
+/*VIDEOER*/
+
+.home .marginRight {
     display: inline-block;
 }
 
-div.blue {
-    background-color: #2c3e50;
-    border-bottom: 10px;
-    border-style: none none groove none;
+.home #videoDiv1 {
+    margin-right: 29px;
 }
 
-
-
-img.phone {
-    height: 400px;
-    width: 300px;
+.home #videoDiv2 {
+    margin-right: 29px;
 }
 
 .underlined {
@@ -43,11 +67,9 @@ img.phone {
 }
 
 .inline {
-    float:left;
 }
 
 .marginRight {
-    margin-right: 20px;
 }
 
 

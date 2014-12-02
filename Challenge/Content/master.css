@@ -129,7 +129,7 @@ a.navbar-support {
     position: relative;
 }
 
-.master input[type=submit] {
+input.search {
     border-style: none;
     background-image: url('../Images/searchbutton3.gif');
     width: 30px;
