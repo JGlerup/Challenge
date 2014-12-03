@@ -89,10 +89,11 @@ namespace Challenge.Profile
                 SmtpClient smtp = new SmtpClient();
                 smtp.Host = "smtp.gmail.com";
                 smtp.EnableSsl = true;
-                NetworkCredential NetworkCred = new NetworkCredential("glerup9@gmail.com", "Pass122w");
+                NetworkCredential NetworkCred = new NetworkCredential("glerup9@gmail.com", "W122pass");
                 smtp.UseDefaultCredentials = true;
                 smtp.Credentials = NetworkCred;
-                smtp.Port = 465;
+                smtp.Port = int.Parse("587");
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.Send(mm);
             }
         }

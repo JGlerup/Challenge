@@ -30,7 +30,7 @@ CREATE TABLE [dbo].[Users](
 
 GO
 
-USE [aspnet]
+USE [aspnetdb]
 GO
 
 /****** Object:  StoredProcedure [dbo].[Insert_User]    Script Date: 01/03/2014 16:36:23 ******/
