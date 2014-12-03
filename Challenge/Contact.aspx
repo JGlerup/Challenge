@@ -11,9 +11,8 @@
                         You can contact us by mail:
                     <script type="text/javascript">
                         //<![CDATA[
-                        <!--
-                        var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
-                        "harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
+                        var x = "function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
+                        "harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\"" +
                         "\\\\,l=x.length;for(i=0;i<l;i++){if(i>(46+y))y*=2;y%=127;o+=String.fromChar" +
                         "Code(x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\J@SD_VZA\\\\\\\\030@JPN^PS" +
                         "\\\\\\\\026\\\\\\\\035| b+6  z\\\\\\\\024k'*%!: j\\\\\\\\\\\"\\\\'#$:$#\\\\" +
@@ -21,15 +20,14 @@
                         "\\\\024\\\\\\\\035\\\\\\\\013\\\\\\\\000\\\\\\\\016\\\\\\\\017\\\\\\\\031S<" +
                         "\\\\\\\\005\\\\\\\\001\\\\\\\\002\\\\\\\\034\\\\\\\\006\\\\\\\\001V\\\\\\\\" +
                         "022U\\\\\\\\024\\\\\\\\033\\\\\\\\022\\\\\\\\020!\\\\\\\\\\\\\\\\ vozr[\\\\" +
-                        "\\\\002\\\\\\\\034c\\\\\\\\007n)$/+h<9k*\\\\\\\\\\\"\\\\<o#$\\\\\\\\\\\"\\\\"+
-                        "#;'\\\\\\\\\\\"\\\\v\\\\\\\\004{d()-.0\\\\\\\\022\\\\\\\\025\\\\\\\\\\\"\\\\"+
+                        "\\\\002\\\\\\\\034c\\\\\\\\007n)$/+h<9k*\\\\\\\\\\\"\\\\<o#$\\\\\\\\\\\"\\\\" +
+                        "#;'\\\\\\\\\\\"\\\\v\\\\\\\\004{d()-.0\\\\\\\\022\\\\\\\\025\\\\\\\\\\\"\\\\" +
                         "\\\\\\\\000\\\\\\\\014\\\\\\\\004\\\\\\\\n\\\\\\\\013\\\\\\\\r\\\\\\\\007\\" +
                         "\\\\\\r\\\\\\\\016B\\\\\\\\016\\\\\\\\001\\\\\\\\002L^\\\\\\\\023MV\\\\\\\\" +
                         "\\\\\\\\MGC\\\"\\\\,46)\\\"(f};)lo,0(rtsbus.o nruter};)i(tArahc.x=+o{)--i;0" +
                         "=>i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yrt{)84=!)31/l(tAedoCrahc.x(elihw;lo=l," +
-                        "htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcnuf\")"                               ;
-                        while(x=eval(x));
-                        //-->
+                        "htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcnuf\")";
+                        while (x = eval(x));
                         //]]>
                     </script>
                         .
@@ -42,14 +40,14 @@
                     </p>
                 </div>
                 <div class="contact-right">
-                    <asp:Panel ID="Panel1" runat="server" DefaultButton="">
+                    <asp:Panel ID="Panel1" runat="server" DefaultButton="btnSubmit">
                         <p>
                             Please Fill the Following to Send Mail.
                         </p>
                         <p class="contact-labels">
                             Your name:
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*"
-                            ControlToValidate="YourName" ValidationGroup="save" /><br />
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*"
+            ControlToValidate="YourName" ValidationGroup="save" /><br />
                             <asp:TextBox ID="YourName" runat="server" Width="250px" />
                         </p>
                         <p class="contact-labels">
@@ -63,21 +61,20 @@
                                 ValidationGroup="save" />
                         </p>
                         <p class="contact-labels">
-                            Subject:
+                        Subject:
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*"
             ControlToValidate="YourSubject" ValidationGroup="save" /><br />
-                            <asp:TextBox ID="YourSubject" runat="server" Width="400px" />
-                        </p>
+                        <asp:TextBox ID="YourSubject" runat="server" Width="400px" />
+                            </p>
                         <p class="contact-labels">
-                            Your Question:
+                        Your Question:
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*"
             ControlToValidate="Comments" ValidationGroup="save" /><br />
-                            <asp:TextBox ID="Comments" runat="server"
-                                TextMode="MultiLine" Rows="10" Width="350px" />
+                        <asp:TextBox ID="Comments" runat="server"
+                            TextMode="MultiLine" Rows="10" Width="400px" />
                         </p>
-                        <asp:Button CssClass="contact-btn" runat="server" Text="Send"
-                            ValidationGroup="save" />
-
+                            <asp:Button ID="btnSubmit" CssClass="contact-btn" runat="server" Text="Send"
+                                OnClick="Button1_Click" ValidationGroup="save" />
                     </asp:Panel>
                     <p>
                         <asp:Label ID="DisplayMessage" runat="server" Visible="false" />
