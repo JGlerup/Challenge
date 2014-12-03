@@ -161,6 +161,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Content\contact.css" />
     <Content Include="Content\master.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\upload.css" />
@@ -169,9 +170,14 @@
     <Content Include="Content\home.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\search54.svg" />
+    <Content Include="Images\cash_receiving-50.png" />
     <Content Include="Images\defaultVideo.png" />
+    <Content Include="Images\groups-36.png" />
+    <Content Include="Images\image_file-48.png" />
     <Content Include="Images\phone_png.png" />
+    <Content Include="Images\search-48.png" />
     <Content Include="Images\searchbutton3.gif" />
+    <Content Include="Images\speech_bubble-50.png" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -420,7 +426,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
