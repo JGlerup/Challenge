@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default" title="Home" description="Home page">
+    <siteMapNode url="~/Profile/Profile" title="Profile"  description="Profile page">
+      <siteMapNode url="~/Profile/Achievements" title="Achievements"  description="Achievements page" />
+      <siteMapNode url="~/Profile/Users" title="User Administration"  description="User administration page" />
+      <siteMapNode url="~/Profile/News" title="News administration"  description="News administration page" />
+      <siteMapNode url="~/Profile/Donations" title="Donations"  description="Donations page" />
+      <siteMapNode url="~/Profile/Settings" title="Settings"  description="Settings page" />
+      <siteMapNode url="~/Profile/Uploads" title="Uploads"  description="Your uploads page" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
