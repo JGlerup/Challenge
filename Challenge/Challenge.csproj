@@ -449,6 +449,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controls\" />
     <Folder Include="Images\Profiles\" />
+    <Folder Include="Video\Glerup\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

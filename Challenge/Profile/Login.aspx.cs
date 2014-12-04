@@ -10,6 +10,7 @@ using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Net;
 using System.Web.Security;
+using System.IO;
 
 namespace Challenge.Profile
 {
@@ -52,6 +53,7 @@ namespace Challenge.Profile
                     default:
                         message = "Registration successful.\\nUser Id: " + userId.ToString();
                         SendActivationEmail(userId);
+                        Directory.CreateDirectory(Server.MapPath("~/Video/") + this.Page.User.Identity.Name + "/");
                         break;
                 }
                 ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);

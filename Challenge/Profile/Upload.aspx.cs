@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -11,7 +12,10 @@ namespace Challenge.Profile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!this.Page.User.Identity.IsAuthenticated)
+            {
+                FormsAuthentication.RedirectToLoginPage();
+            }
         }
 
         protected void Submit_Click(object sender, EventArgs e)
@@ -22,11 +26,11 @@ namespace Challenge.Profile
                 string fileExt =
                    System.IO.Path.GetExtension(VideoUpload.FileName);
 
-                if (fileExt == ".mp3")
+                if (fileExt == ".mp4")
                 {
                     try
                     {
-                        VideoUpload.SaveAs("C:\\Uploads\\" +
+                        VideoUpload.SaveAs(Server.MapPath("~/Video/") + this.Page.User.Identity.Name +"/"+
                            VideoUpload.FileName);
                         Label1.Text = "File name: " +
                             VideoUpload.PostedFile.FileName + "<br>" +
@@ -41,7 +45,7 @@ namespace Challenge.Profile
                 }
                 else
                 {
-                    Label1.Text = "Only .mp3 files allowed!";
+                    Label1.Text = "Only .mp4 files allowed!";
                 }
             }
             else
