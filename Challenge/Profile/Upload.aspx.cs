@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -18,6 +20,8 @@ namespace Challenge.Profile
             }
         }
 
+        int usrId;
+
         protected void Submit_Click(object sender, EventArgs e)
         {
 
@@ -30,13 +34,26 @@ namespace Challenge.Profile
                 {
                     try
                     {
-                        VideoUpload.SaveAs(Server.MapPath("~/Video/") + this.Page.User.Identity.Name +"/"+
+                        VideoUpload.SaveAs(Server.MapPath("~/Video/") + this.Page.User.Identity.Name + "/" +
                            VideoUpload.FileName);
                         Label1.Text = "File name: " +
-                            VideoUpload.PostedFile.FileName + "<br>" +
-                            VideoUpload.PostedFile.ContentLength + " kb<br>" +
-                            "Content type: " +
-                            VideoUpload.PostedFile.ContentType;
+                            VideoUpload.PostedFile.FileName + "<br>er blevet uploadet";
+
+                        string constr = ConfigurationManager.ConnectionStrings["aspnetdb"].ConnectionString;
+                        SqlConnection con = new SqlConnection(constr);
+                        using (con)
+                        {
+
+                            SqlCommand insertCommand = new SqlCommand(
+                              "INSERT INTO [Feed] ( [UserId], [Time], [What]) SELECT [UserID], SYSDATETIME(), '" + this.Page.User.Identity.Name + " uploaded " + VideoUpload.PostedFile.FileName + "' FROM [Users] Where [UserName] = '" + this.Page.User.Identity.Name + "';",
+                              con);
+
+                            con.Open();
+
+                            insertCommand.ExecuteNonQuery();
+                            con.Close();
+
+                        }
                     }
                     catch (Exception ex)
                     {
