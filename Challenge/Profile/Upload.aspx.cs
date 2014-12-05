@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -18,6 +20,13 @@ namespace Challenge.Profile
             {
                 FormsAuthentication.RedirectToLoginPage();
             }
+
+            //DataSet ds = Directory.GetFiles(Server.MapPath("~/Video/"+this.User.Identity.Name+"/"));
+            //if (ds.Tables.Count > 0)
+            //{
+            userUploads.DataSource = Directory.EnumerateFiles(Server.MapPath("~/Video/" + this.User.Identity.Name + "/"),"*.mp4");
+            userUploads.DataBind();
+            //}
         }
 
         int usrId;

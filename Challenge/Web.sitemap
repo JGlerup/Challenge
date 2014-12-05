@@ -7,7 +7,7 @@
       <siteMapNode url="~/Profile/News" title="News administration"  description="News administration page" />
       <siteMapNode url="~/Profile/Donations" title="Donations"  description="Donations page" />
       <siteMapNode url="~/Profile/Settings" title="Settings"  description="Settings page" />
-      <siteMapNode url="~/Profile/Uploads" title="Uploads"  description="Your uploads page" />
+      <siteMapNode url="~/Profile/Upload" title="Upload"  description="Your uploads page" />
     </siteMapNode>
   </siteMapNode>
 </siteMap>

@@ -13,7 +13,7 @@
                         <Items>
                             <asp:MenuItem Text="Profile" NavigateUrl="~/Profile/Profile.aspx"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
-                            <asp:MenuItem Text="Uploads"></asp:MenuItem>
+                            <asp:MenuItem Text="Uploads" NavigateUrl="~/Profile/Upload.aspx"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
                             <asp:MenuItem Text="Donations"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
