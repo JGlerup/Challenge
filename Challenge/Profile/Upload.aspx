@@ -41,10 +41,20 @@
                     </div>
                     <div class="right">
                         <asp:Label ID="Label3" runat="server">Your uploads</asp:Label>
-                            <br />
-                        <asp:GridView ID="userUploads" AutoGenerateColumns="true" runat="server">
-                            </asp:GridView>
-                        </div>
+                        <br />
+                        <asp:Literal ID="literalVideo" runat="server"></asp:Literal>
+                        <%--<asp:GridView ID="userUploads" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333">
+                            <Columns>
+                                <asp:BoundField DataField="RowNumber" HeaderText="Nr." />
+                                <asp:BoundField DataField="VideoName" HeaderText="Video Name" />
+                                <asp:TemplateField HeaderText="Video" >
+                                    <ItemTemplate >
+                                        <video src="<%# Bind(videoUrl); %>">"
+                                    </ItemTemplate>
+                                    </asp:TemplateField>
+                            </Columns>
+                        </asp:GridView>--%>
+                    </div>
                 </div>
             </div>
         </div>

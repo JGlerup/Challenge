@@ -24,12 +24,28 @@ namespace Challenge.Profile
             //DataSet ds = Directory.GetFiles(Server.MapPath("~/Video/"+this.User.Identity.Name+"/"));
             //if (ds.Tables.Count > 0)
             //{
-            userUploads.DataSource = Directory.EnumerateFiles(Server.MapPath("~/Video/" + this.User.Identity.Name + "/"),"*.mp4");
-            userUploads.DataBind();
+            
+
+            try
+            {
+                var videoFiles = Directory.EnumerateFiles(Server.MapPath("~/Video/" + this.User.Identity.Name + "/"),"*.mp4");
+                literalVideo.Text = "<table><tbody><tr><th>Name</th><th>Video</th></tr>";
+                foreach (string currentFile in videoFiles)
+                {
+                    //literalVideo.Text += "<tr><th>" + Path.GetFileName(currentFile) + "</th><th><video width='320' height='240' controls><source src='" + Server.MapPath("~/Video/") + this.Page.User.Identity.Name + "\\" + Path.GetFileName(currentFile) + "' type='video/mp4'></video></th>";
+                    literalVideo.Text += "<tr><th>" + Path.GetFileName(currentFile) + "</th><th><video width='320' height='240' controls><source src='http://localhost:52326/Video/" + this.Page.User.Identity.Name + "\\" + Path.GetFileName(currentFile) + "' type='video/mp4'></video></th>";
+                    
+                    
+                }
+                literalVideo.Text += "</tbody></table>";
+                
+            }
+            catch (Exception er)
+            {
+                Console.WriteLine(er.Message);
+            }
             //}
         }
-
-        int usrId;
 
         protected void Submit_Click(object sender, EventArgs e)
         {

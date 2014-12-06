@@ -67,12 +67,12 @@ namespace Challenge.Profile {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// userUploads control.
+        /// literalVideo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView userUploads;
+        protected global::System.Web.UI.WebControls.Literal literalVideo;
     }
 }

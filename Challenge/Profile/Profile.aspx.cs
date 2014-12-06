@@ -120,6 +120,22 @@ namespace Challenge.Profile
                     uploadImage.SaveAs(Server.MapPath("~/Images/Profiles/") + this.Page.User.Identity.Name + ".png");
                     //uploadImage.SaveAs(Server.MapPath("~/Images/Profiles/") + this.Page.User.Identity.Name+Path.GetExtension(uploadImage.FileName));
                     //StatusLabel.Text = "Upload status: File uploaded!";
+
+                    string constr = ConfigurationManager.ConnectionStrings["aspnetdb"].ConnectionString;
+                    SqlConnection con = new SqlConnection(constr);
+                    using (con)
+                    {
+
+                        SqlCommand insertCommand = new SqlCommand(
+                          "INSERT INTO [Feed] ( [UserId], [Time], [What]) SELECT [UserID], SYSDATETIME(), '" + this.Page.User.Identity.Name + " switched profile picture' FROM [Users] Where [UserName] = '" + this.Page.User.Identity.Name + "';",
+                          con);
+
+                        con.Open();
+
+                        insertCommand.ExecuteNonQuery();
+                        con.Close();
+
+                    }
                 }
                 catch (Exception ex)
                 {
