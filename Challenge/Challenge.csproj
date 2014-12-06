@@ -164,6 +164,7 @@
     <Content Include="Content\contact.css" />
     <Content Include="Content\master.css" />
     <Content Include="Content\profile.css" />
+    <Content Include="Content\rules.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\upload.css" />
     <Content Include="favicon.ico" />
@@ -225,6 +226,9 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="sql\aspnetdb.sql" />
+    <Content Include="Support\FAQ.aspx" />
+    <Content Include="Support\Guideline.aspx" />
+    <Content Include="Support\Rules.aspx" />
     <Content Include="Support\Support.aspx" />
     <Content Include="Video\clip.mp4" />
     <Content Include="ViewSwitcher.ascx" />
@@ -429,6 +433,27 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Support\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Guideline.aspx.cs">
+      <DependentUpon>Guideline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Guideline.aspx.designer.cs">
+      <DependentUpon>Guideline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Rules.aspx.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Rules.aspx.designer.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Support\Support.aspx.cs">
       <DependentUpon>Support.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

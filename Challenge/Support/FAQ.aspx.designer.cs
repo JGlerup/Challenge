@@ -11,7 +11,7 @@ namespace Challenge.Support
 {
 
 
-    public partial class Support
+    public partial class FAQ
     {
     }
 }
