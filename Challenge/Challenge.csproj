@@ -162,10 +162,12 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Content\contact.css" />
+    <Content Include="Content\faq.css" />
     <Content Include="Content\master.css" />
     <Content Include="Content\profile.css" />
     <Content Include="Content\rules.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\support.css" />
     <Content Include="Content\upload.css" />
     <Content Include="favicon.ico" />
     <Content Include="Contact.aspx" />

@@ -1,29 +1,29 @@
 ﻿body {
 }
 
-.rules {
+.support {
     height: 100vh;
     width: 100%;
     color: #000;
 }
 
-.inner-rules {
+.inner-support {
     width: 1000px;
     margin: 0 auto;
 }
 
-.rules .rules-box{
+.faq .support-box{
     width: 950px;
     height: 500px;
     border: 1px solid #000;
     margin: 0 auto;
     margin-top: 75px;
 }
-.rules h1, h2, h3 {
+.support h1, h2, h3, h4 {
     color: #202b36;
 }
 
-.rules .rules-title{
+.support .support-title{
     position: absolute;
     margin-top: -19px;
     margin-left: 30px;
@@ -31,7 +31,7 @@
     padding: 0 10px;
 }
 
-.rules-content{
+.support-content{
     width: auto;
     float: left;
     margin: 25px 40px 0 40px;
