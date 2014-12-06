@@ -163,6 +163,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Content\contact.css" />
     <Content Include="Content\faq.css" />
+    <Content Include="Content\guide.css" />
     <Content Include="Content\master.css" />
     <Content Include="Content\profile.css" />
     <Content Include="Content\rules.css" />
@@ -475,6 +476,7 @@
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controls\" />
+    <Folder Include="Guides\" />
     <Folder Include="Images\Profiles\" />
     <Folder Include="Video\Glerup\" />
   </ItemGroup>

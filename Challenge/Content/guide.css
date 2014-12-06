@@ -1,29 +1,29 @@
 ﻿body {
 }
 
-.support {
+.guide {
     height: 100vh;
     width: 100%;
     color: #000;
 }
 
-.inner-support {
+.inner-guide {
     width: 1000px;
     margin: 0 auto;
 }
 
-.support .support-box{
+.guide .guide-box{
     width: 950px;
     height: 500px;
     border: 1px solid #000;
     margin: 0 auto;
     margin-top: 75px;
 }
-.support h1, h2, h3 {
+.guide h1, h2, h3 {
     color: #202b36;
 }
 
-.support .support-title{
+.guide .guide-title{
     position: absolute;
     margin-top: -19px;
     margin-left: 30px;
@@ -31,7 +31,7 @@
     padding: 0 10px;
 }
 
-.support-content{
+.guide-content{
     width: auto;
     float: left;
     margin: 25px 40px 0 40px;
