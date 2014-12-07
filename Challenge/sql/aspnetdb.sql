@@ -130,3 +130,44 @@ SELECT 'Ram', '12345', 'ram@aspsnippets.com', GETDATE(), NULL
 GO
 INSERT INTO UserActivation
 SELECT 2, NEWID()
+
+
+GO
+
+USE [aspnetdb]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Achievements](
+	[UserId] [int] NOT NULL,
+	[AchievementId] [uniqueidentifier] NOT NULL,
+	[Achieved] [bit],
+	[Reward] [nvarchar],
+ CONSTRAINT [PK_Achievements] PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+GO
+
+USE [aspnetdb]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Feed](
+	[UserId] [int] NOT NULL,
+	[Time] [DATETIME] NOT NULL,
+	[What] [nvarchar](100) NOT NULL,
+ )

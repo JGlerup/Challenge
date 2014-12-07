@@ -162,14 +162,20 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Content\contact.css" />
+    <Content Include="Content\faq.css" />
+    <Content Include="Content\guide.css" />
     <Content Include="Content\master.css" />
+    <Content Include="Content\profile.css" />
+    <Content Include="Content\rules.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\support.css" />
     <Content Include="Content\upload.css" />
     <Content Include="favicon.ico" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\home.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\search54.svg" />
+    <Content Include="Images\separatorline.png" />
     <Content Include="Images\cash_receiving-50.png" />
     <Content Include="Images\defaultVideo.png" />
     <Content Include="Images\groups-36.png" />
@@ -184,8 +190,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Profile\Achievements.aspx" />
     <Content Include="Profile\Activation.aspx" />
     <Content Include="Profile\Login.aspx" />
+    <Content Include="Profile\Profile.aspx" />
     <Content Include="Profile\Upload.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -221,6 +229,9 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="sql\aspnetdb.sql" />
+    <Content Include="Support\FAQ.aspx" />
+    <Content Include="Support\Guideline.aspx" />
+    <Content Include="Support\Rules.aspx" />
     <Content Include="Support\Support.aspx" />
     <Content Include="Video\clip.mp4" />
     <Content Include="ViewSwitcher.ascx" />
@@ -237,6 +248,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
@@ -373,6 +385,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Profile\Achievements.aspx.cs">
+      <DependentUpon>Achievements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Achievements.aspx.designer.cs">
+      <DependentUpon>Achievements.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Profile\Activation.aspx.cs">
       <DependentUpon>Activation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -386,6 +405,13 @@
     </Compile>
     <Compile Include="Profile\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile\Upload.aspx.cs">
       <DependentUpon>Upload.aspx</DependentUpon>
@@ -410,6 +436,27 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Support\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Guideline.aspx.cs">
+      <DependentUpon>Guideline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Guideline.aspx.designer.cs">
+      <DependentUpon>Guideline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Rules.aspx.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Rules.aspx.designer.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Support\Support.aspx.cs">
       <DependentUpon>Support.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -429,6 +476,9 @@
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controls\" />
+    <Folder Include="Guides\" />
+    <Folder Include="Images\Profiles\" />
+    <Folder Include="Video\Glerup\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

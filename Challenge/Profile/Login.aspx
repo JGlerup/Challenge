@@ -9,11 +9,9 @@
             <div class="blue">
                 <div class="content-blue">
                     <div class="left">
-                        <asp:Login
-                            ID="Login1"
-                            runat="server"
-                            DestinationPageUrl="~/Default.aspx">
-                        </asp:Login>
+                        <asp:Login ID="Login1" runat="server" OnAuthenticate="ValidateUser"></asp:Login>
+                        <br />
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
                     </div>
                     <div class="right">
                         <table border="0" cellpadding="0" cellspacing="0">
@@ -83,6 +81,6 @@
         </div>
     </div>
 
-    
+
 
 </asp:Content>
