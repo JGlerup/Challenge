@@ -17,12 +17,12 @@ namespace Challenge.Profile
         int usrId;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!this.Page.User.Identity.IsAuthenticated)
-            {
-                FormsAuthentication.RedirectToLoginPage();
-            }
-            else
-            {
+            //if (!this.Page.User.Identity.IsAuthenticated)
+            //{
+            //    FormsAuthentication.RedirectToLoginPage();
+            //}
+            //else
+            //{
 
 
                 string constr = ConfigurationManager.ConnectionStrings["aspnetdb"].ConnectionString;
@@ -56,7 +56,7 @@ namespace Challenge.Profile
                     profileImage.ImageUrl = "~/Images/defaultVideo.png";
                 }
                 
-            }
+            //}
 
             if (!IsPostBack)
             {
