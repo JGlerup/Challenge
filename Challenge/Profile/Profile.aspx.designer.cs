@@ -10,7 +10,7 @@
 namespace Challenge.Profile {
     
     
-    public partial class Upload {
+    public partial class Profile {
         
         /// <summary>
         /// navMenu control.
@@ -22,57 +22,66 @@ namespace Challenge.Profile {
         protected global::System.Web.UI.WebControls.Menu navMenu;
         
         /// <summary>
-        /// Label2 control.
+        /// LoginName1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.LoginName LoginName1;
         
         /// <summary>
-        /// VideoUpload control.
+        /// profileImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload VideoUpload;
+        protected global::System.Web.UI.WebControls.Image profileImage;
         
         /// <summary>
-        /// Submit control.
+        /// uploadImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit;
+        protected global::System.Web.UI.WebControls.FileUpload uploadImage;
         
         /// <summary>
-        /// Label1 control.
+        /// profileMail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Literal profileMail;
         
         /// <summary>
-        /// Label3 control.
+        /// joined control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Literal joined;
         
         /// <summary>
-        /// literalVideo control.
+        /// doSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal literalVideo;
+        protected global::System.Web.UI.WebControls.LinkButton doSubmit;
+        
+        /// <summary>
+        /// UserFeed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView UserFeed;
     }
 }

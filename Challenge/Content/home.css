@@ -20,13 +20,13 @@ body {
 .home .content-blue {
     width: 1000px;
     margin: 0 auto;
-    height: 450px;
+    height: 535px;
 }
 
 .home div.blue {
     background-color: #2c3e50;
     width: 100%;
-    box-shadow: 0px 2px 6px #414141;
+    box-shadow: 0px 8px 5px -4px #414141;
 }
 
 /*TELEFON*/
@@ -35,7 +35,7 @@ body {
     float: left;
     width: 250px;
     position: absolute;
-    margin: 60px 0 0 14px;
+    margin: 52px 0 0 14px;
 }
 
 .home .phone {
@@ -45,7 +45,8 @@ body {
 
 .home .right {
     float: right;
-    width: 730px;
+    width: 700px;
+    margin-top: 36px;
 }
 
 /*VIDEOER*/
@@ -54,26 +55,81 @@ body {
     display: inline-block;
 }
 
-.home #videoDiv1 {
+.home #videoDiv1, #videoDiv2, #videoDiv4, #videoDiv5 {
     margin-right: 29px;
+    width: 200px;
 }
 
-.home #videoDiv2 {
-    margin-right: 29px;
+.home #videoDiv3, #videoDiv6 {
+    width: 200px;
 }
 
 .underlined {
     text-decoration: underline;
+    color: #fff;
+    font-size: 17px;
 }
 
-.inline {
+.home .videoTitel1, .videoTitel2, .videoTitel3 {
+    color: #fff;
+    font-size: 14px;
 }
 
-.marginRight {
+.home #video1, #video2, #video3, #video4, #video5, #video6{
+    border-radius: 15px;
 }
 
 
+/* HVID SECTION*/
 
+.home .content-white {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.home .inner-white {
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.home .inner-left {
+    width: 500px;
+    color: #000;
+    margin-top: 75px;
+}
+
+.home .donate {
+    width: 40px;
+    position: absolute;
+    margin-left: 15px;
+}
+
+.home .group{
+    width: 40px;
+    margin: 5px 0 0 15px;
+    position: absolute;
+}
+
+.home .home-text{
+    margin-left: 80px;
+}
+
+.home .inner-right{
+    float: right;
+    width: 450px;
+    height: 310px;
+    margin-top: -314px;
+}
+
+.home .image{
+    margin: 115px 0 0 190px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 

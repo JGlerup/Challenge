@@ -1,7 +1,6 @@
-﻿<%@ Page Title="Upload" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Upload.aspx.cs" Inherits="Challenge.Profile.Upload" %>
+﻿<%@ Page Title="Profile" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Profile.aspx.cs" Inherits="Challenge.Profile.Profile" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
 
 
     <div class="home">
@@ -29,31 +28,25 @@
                     </asp:Menu>
 
                     <div class="left">
-                        <div class="upload">
-                            <asp:Label ID="Label2" runat="server">Upload a video</asp:Label>
+                        <div style="border: 1px solid;">
+                            <asp:LoginName ID="LoginName1" runat="server" />
                             <br />
-                            <asp:FileUpload ID="VideoUpload" runat="server" /><br />
+                            <asp:Image ID="profileImage" runat="server" /><br />
+                            <asp:FileUpload ID="uploadImage" CssClass="hiddenUpload" runat="server" /><br />
+                            <input type="button" ID="uploadImageLink" OnClick="document.getElementById('MainContent_uploadImage').click();document.getElementById('MainContent_doSubmit').style.display = 'block';" value="Change your profile picture" />
                             <br />
-                            <asp:Button Text="Upload" ID="Submit" runat="server" OnClick="Submit_Click" />&nbsp;<br />
-                            <br />
-                            <asp:Label ID="Label1" runat="server"></asp:Label>
+                            <span>Mail: </span>
+                            <asp:Literal ID="profileMail" runat="server" /><br />
+                            <span>Joined: </span>
+                            <asp:Literal ID="joined" runat="server" /><br />
+                            <asp:LinkButton runat="server" CssClass="hiddenUpload" ID="doSubmit" Text="Ok" OnClick="uploadProfilePicture"></asp:LinkButton>
                         </div>
                     </div>
                     <div class="right">
-                        <asp:Label ID="Label3" runat="server">Your uploads</asp:Label>
-                        <br />
-                        <asp:Literal ID="literalVideo" runat="server"></asp:Literal>
-                        <%--<asp:GridView ID="userUploads" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333">
-                            <Columns>
-                                <asp:BoundField DataField="RowNumber" HeaderText="Nr." />
-                                <asp:BoundField DataField="VideoName" HeaderText="Video Name" />
-                                <asp:TemplateField HeaderText="Video" >
-                                    <ItemTemplate >
-                                        <video src="<%# Bind(videoUrl); %>">"
-                                    </ItemTemplate>
-                                    </asp:TemplateField>
-                            </Columns>
-                        </asp:GridView>--%>
+                        <div style="border: 1px solid;">
+                            <asp:GridView ID="UserFeed" AutoGenerateColumns="true" runat="server">
+                            </asp:GridView>
+                        </div>
                     </div>
                 </div>
             </div>
