@@ -25,7 +25,8 @@
                     <div class="navbar-resources">
                         <a class="navbar-brand" runat="server" href="~/">CHALLENGE</a>
                         <a class="navbar-brand-bottom" runat="server" href="~/">GAME</a>
-                        <a class="navbar-right-login" runat="server" href="~/Profile/Login">LOGIN</a>
+                        <asp:LoginStatus ID="LoginStatus1" CssClass="navbar-right-login" LoginText="LOGIN" LogoutText="LOG OUT" runat="server" />
+                        <!--<a class="navbar-right-login" runat="server" href="~/Profile/Login">LOGIN</a> -->
                         <a class="navbar-right-upload" runat="server" href="~/Profile/Upload">UPLOAD</a>
                             <table cellpadding="0px" cellspacing="0px">
                                 <tr>

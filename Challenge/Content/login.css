@@ -1,0 +1,171 @@
+﻿body {
+}
+
+.login .content{
+    width: 1000px;
+    margin: 0 auto;
+    height: 535px;
+}
+
+.login .left {
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 300px;
+    width: 316px;
+    margin-top: 50px;
+}
+
+.login .right {
+    float: right;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 370px;
+    margin-top: 50px;
+}
+
+.login .blue {
+    background: #2C3E50;
+}
+
+.login th{
+    border:none;
+}
+
+.login .login-box-header h2{
+    margin-left: 30px;
+}
+
+.login .login-box-header{
+    background-color: rgb(228, 228, 228);
+    width: 316px;
+    position: absolute;
+    border-radius: 5px 5px 0 0;
+    margin: -101px 0 0 -117px;
+    border-bottom: 1px solid #888;
+}
+
+.login .login-username-box{
+    width: 255px;
+    height: 50px;
+    margin-left: -88px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #888;
+}
+
+.login .login-password-box{
+    width: 255px;
+    height: 50px;
+    margin-left: -88px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #888;
+    margin-right: 13px;
+    margin-top: -3px;
+}
+
+
+.login table{
+    margin: 33px 0 0 0;
+}
+
+
+/*CHECKBOX*/
+
+.login .login-check-box{
+    left: -88px;
+    position: relative;
+}  
+
+/*LOGIN BUTTON*/
+
+.login .login-btn{
+    width: 90px;
+    height: 30px;
+    background-color: #4F8ECD;
+    border-radius: 5px;
+    color:#fff;
+    border: none;
+    margin: 10px 0 0 78px;
+}
+
+/* REGISTRATION*/
+
+.login .regi{
+    margin-top: 90px;
+    margin-right: -139px;
+}
+
+.login .regi-header{
+    background-color: rgb(228, 228, 228);
+    width: 488px;
+    position: absolute;
+    border-radius: 5px 5px 0 0;
+    margin: -90px 0 0 0;
+    border-bottom: 1px solid #888;
+}
+
+.login .regi-header h2{
+    margin-left: 30px;
+}
+
+/*SUBMIT BTN*/
+
+.login .submit-btn{
+    width: 90px;
+    height: 30px;
+    background-color: #4F8ECD;
+    border-radius: 5px;
+    color:#fff;
+    border: none;
+    margin: 10px 0 0 186px;
+}
+
+/*INPUT*/
+
+.login .regi-username{
+    width: 255px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #888;
+    position: absolute;
+    margin-right: 104px;
+    margin-top: -24px;
+}
+
+.login .regi-password{
+    width: 255px;
+    height: 50px;
+    margin-left: 20px;
+    border: 1px solid #888;
+    position: absolute;
+    margin-right: 104px;
+    margin-top: -25px;
+}
+
+.login .regi-password-confirm{
+    width: 255px;
+    height: 50px;
+    margin-left: 20px;
+    border: 1px solid #888;
+    position: absolute;
+    margin-right: 104px;
+    margin-top: -26px;
+}
+
+.login .regi-mail{
+    width: 255px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #888;
+    position: absolute;
+    margin-right: 104px;
+    margin-top: -27px;
+}
+
+/*TEXT*/
+
+.login .regi-input-text{
+    padding-left: 35px;
+}
