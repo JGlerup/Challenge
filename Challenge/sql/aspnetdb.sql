@@ -171,3 +171,25 @@ CREATE TABLE [dbo].[Feed](
 	[Time] [DATETIME] NOT NULL,
 	[What] [nvarchar](100) NOT NULL,
  )
+
+ 
+ GO
+
+ USE [aspnetdb]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[News](
+	[NewsId] [int] NOT NULL,
+	[Title] [nvarchar](50),
+	[ContentText] [nvarchar](2500),
+ CONSTRAINT [PK_NewsId] PRIMARY KEY CLUSTERED 
+(
+	[NewsId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
