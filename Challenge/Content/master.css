@@ -1,6 +1,11 @@
 ﻿body {
     @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
     font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 /*NAVS*/
@@ -25,7 +30,7 @@ div.navbar-content {
 div.nav {
     width: 100%;
     height: 40px;
-    background-color: #2C3E50; 
+    background-color: #2C3E50;
 }
 
 div.navbar-bottom {
@@ -83,10 +88,10 @@ a.navbar-right-login {
     font-size: 15px;
 }
 
-a.navbar-right-login:hover {
-    background-color:#007FFF;
-    color: white;
-} 
+    a.navbar-right-login:hover {
+        background-color: #007FFF;
+        color: white;
+    }
 
 
 /*UPLOAD KNAP*/
@@ -101,14 +106,14 @@ a.navbar-right-upload {
     color: #fff;
     line-height: 2;
     font-weight: bold;
-    margin: 14px 14px 0 0; 
+    margin: 14px 14px 0 0;
     font-size: 15px;
 }
 
-a.navbar-right-upload:hover {
-    background-color:#007FFF;
-    color: white;
-} 
+    a.navbar-right-upload:hover {
+        background-color: #007FFF;
+        color: white;
+    }
 
 
 /*SUPPORT*/
@@ -124,16 +129,16 @@ a.navbar-support {
 
 /*SEARCH*/
 
-.master td{
+.master td {
     border: none;
     padding: 0;
 }
 
-.master tr{
+.master tr {
     border: none;
 }
 
-.master input.search-input{
+.master input.search-input {
     width: 70px;
     border: 0px solid;
     height: 30px;
@@ -167,4 +172,47 @@ footer {
     text-align: center;
     color: #fff;
     line-height: 3.8;
+}
+
+@media (max-width: 1024px) {
+    div.navbar-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        height: 60px;
+    }
+
+    div.navbar-bottom {
+        width: 700px;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    a.navbar-brand {
+        text-decoration: none;
+        float: left;
+        margin: 28px 15px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    a.navbar-brand-bottom {
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        margin: 49px 0 0 -24px;
+    }
+
+    footer {
+        background-color: #202b36;
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #fff;
+        line-height: 3.8;
+    }
 }

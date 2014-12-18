@@ -1,6 +1,211 @@
 ﻿body {
 }
 
-.hiddenUpload {
+/* Move down content because we have a fixed navbar that is 50px tall */
+h1, h2, h3, h4 {
+    color: white;
+}
+
+body {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+
+/*CONTENT*/
+.profile .body-content {
+    padding: 0;
+    margin: 0;
+}
+
+
+.profile .content-blue {
+    width: 1000px;
+    margin: 0 auto;
+    height: 535px;
+    margin-top: 90px;
+}
+
+.profile div.blue {
+    background-color: #2c3e50;
+    width: 100%;
+    box-shadow: 0px 8px 5px -4px #414141;
+}
+
+/*UNDER NAVIGATION*/
+
+.profile .profile-header{
+    position: absolute;
+    margin: -80px 0 0 17px;
+}
+
+.profile #MainContent_navMenu{
+    position: absolute;
+    margin: -60px 0 0 17px;
+    color: #202b36;
+}
+
+.profile #MainContent_navMenu a{
+    color: #202b36;
+}
+
+.profile #MainContent_navMenu a:visited{
+    color:#202b36;
+    text-decoration: none; 
+}
+
+.profile #MainContent_navMenu a:hover{
+    text-decoration: underline;
+}
+
+/*PROFILBILLEDE*/
+
+.profile #MainContent_profileImage {
+    width: 200px;
+    padding-left: 20px;
+}
+
+/*PROFIL INDHOLD*/
+
+.profile #MainContent_LoginName1{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20px; 
+    margin-top: 20px;
+}
+
+.profile .left {
+    float: left;
+    width: 350px;
+    position: absolute;
+    margin: 37px 0 0 14px;
+}
+
+.profile input#uploadImageLink{
+    margin-left: 20px;
+    margin-top: -20px;
+    position: absolute;
+    background-color: #fafafa;
+    border: none;
+    width: 200px;
+    height: 30px;
+    font-size: 13px; 
+}
+
+.profile .profile-text{
+    color: #fafafa;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.profile .right {
+    float: right;
+    width: 600px;
+    margin-top: 36px;
+    color: #fafafa;
+}
+
+.profile #MainContent_UserFeed{
+    border: none;
+    width: 500px;
+}
+
+.profile td{
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+.profile tr{
+    padding: 0;
+    border: none;
+}
+
+/*VIDEOER*/
+
+.profile .marginRight {
+    display: inline-block;
+}
+
+.profile #videoDiv1, #videoDiv2, #videoDiv4, #videoDiv5 {
+    margin-right: 29px;
+    width: 200px;
+}
+
+.profile #videoDiv3, #videoDiv6 {
+    width: 200px;
+}
+
+.underlined {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 17px;
+}
+
+.profile .videoTitel1, .videoTitel2, .videoTitel3 {
+    color: #fff;
+    font-size: 14px;
+}
+
+.profile #video1, #video2, #video3, #video4, #video5, #video6{
+    border-radius: 15px;
+}
+
+
+/* HVID SECTION*/
+
+.profile .content-white {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.profile .inner-white {
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.profile .inner-left {
+    width: 500px;
+    color: #000;
+    margin-top: 75px;
+}
+
+.profile .donate {
+    width: 40px;
+    position: absolute;
+    margin-left: 15px;
+}
+
+.profile .group{
+    width: 40px;
+    margin: 5px 0 0 15px;
+    position: absolute;
+}
+
+..profile .home-text{
+    margin-left: 80px;
+}
+
+.profile .inner-right{
+    float: right;
+    width: 450px;
+    height: 310px;
+    margin-top: -314px;
+}
+
+.profile .image{
+    margin: 115px 0 0 190px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.profile .hiddenUpload {
     display:none;
 }

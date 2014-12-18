@@ -2,13 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-
-
-    <div class="home">
+    <div class="upload">
         <div class="content-content">
             <div class="blue">
                 <div class="content-blue">
-                    <h2><%: Title %>.</h2>
+                    <h2><%: Title %></h2>
 
                     <asp:Menu ID="navMenu" runat="server" Orientation="Horizontal">
                         <Items>

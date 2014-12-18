@@ -1,7 +1,8 @@
 ﻿body {
+    min-height: 100%;
 }
 
-.login .content{
+.login .content {
     width: 1000px;
     margin: 0 auto;
     height: 535px;
@@ -28,15 +29,15 @@
     background: #2C3E50;
 }
 
-.login th{
-    border:none;
+.login th {
+    border: none;
 }
 
-.login .login-box-header h2{
+.login .login-box-header h2 {
     margin-left: 30px;
 }
 
-.login .login-box-header{
+.login .login-box-header {
     background-color: rgb(228, 228, 228);
     width: 316px;
     position: absolute;
@@ -45,7 +46,7 @@
     border-bottom: 1px solid #888;
 }
 
-.login .login-username-box{
+.login .login-username-box {
     width: 255px;
     height: 50px;
     margin-left: -88px;
@@ -53,7 +54,7 @@
     border: 1px solid #888;
 }
 
-.login .login-password-box{
+.login .login-password-box {
     width: 255px;
     height: 50px;
     margin-left: -88px;
@@ -64,38 +65,38 @@
 }
 
 
-.login table{
+.login table {
     margin: 33px 0 0 0;
 }
 
 
 /*CHECKBOX*/
 
-.login .login-check-box{
+.login .login-check-box {
     left: -88px;
     position: relative;
-}  
+}
 
 /*LOGIN BUTTON*/
 
-.login .login-btn{
+.login .login-btn {
     width: 90px;
     height: 30px;
     background-color: #4F8ECD;
     border-radius: 5px;
-    color:#fff;
+    color: #fff;
     border: none;
     margin: 10px 0 0 78px;
 }
 
 /* REGISTRATION*/
 
-.login .regi{
+.login .regi {
     margin-top: 90px;
     margin-right: -139px;
 }
 
-.login .regi-header{
+.login .regi-header {
     background-color: rgb(228, 228, 228);
     width: 488px;
     position: absolute;
@@ -104,25 +105,25 @@
     border-bottom: 1px solid #888;
 }
 
-.login .regi-header h2{
-    margin-left: 30px;
-}
+    .login .regi-header h2 {
+        margin-left: 30px;
+    }
 
 /*SUBMIT BTN*/
 
-.login .submit-btn{
+.login .submit-btn {
     width: 90px;
     height: 30px;
     background-color: #4F8ECD;
     border-radius: 5px;
-    color:#fff;
+    color: #fff;
     border: none;
     margin: 10px 0 0 186px;
 }
 
 /*INPUT*/
 
-.login .regi-username{
+.login .regi-username {
     width: 255px;
     height: 50px;
     margin-left: 20px;
@@ -133,7 +134,7 @@
     margin-top: -24px;
 }
 
-.login .regi-password{
+.login .regi-password {
     width: 255px;
     height: 50px;
     margin-left: 20px;
@@ -143,7 +144,7 @@
     margin-top: -25px;
 }
 
-.login .regi-password-confirm{
+.login .regi-password-confirm {
     width: 255px;
     height: 50px;
     margin-left: 20px;
@@ -153,7 +154,7 @@
     margin-top: -26px;
 }
 
-.login .regi-mail{
+.login .regi-mail {
     width: 255px;
     height: 50px;
     margin-left: 20px;
@@ -166,6 +167,382 @@
 
 /*TEXT*/
 
-.login .regi-input-text{
+.login .regi-input-text {
     padding-left: 35px;
+}
+
+/*MEDIA*/
+
+/* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
+
+@media (max-width: 1215px) {
+    body {
+        min-height: 100%;
+    }
+
+    .login .content {
+        width: 1000px;
+        margin: 0 auto;
+        height: 535px;
+    }
+
+    .login .left {
+        float: left;
+        background-color: #fff;
+        border-radius: 5px;
+        height: 300px;
+        width: 316px;
+        margin-top: 50px;
+    }
+
+    .login .right {
+        float: right;
+        background-color: #fff;
+        border-radius: 5px;
+        height: 370px;
+        margin-top: 50px;
+    }
+
+    .login .blue {
+        background: #2C3E50;
+    }
+
+    .login th {
+        border: none;
+    }
+
+    .login .login-box-header h2 {
+        margin-left: 30px;
+    }
+
+    .login .login-box-header {
+        background-color: rgb(228, 228, 228);
+        width: 316px;
+        position: absolute;
+        border-radius: 5px 5px 0 0;
+        margin: -101px 0 0 -117px;
+        border-bottom: 1px solid #888;
+    }
+
+    .login .login-username-box {
+        width: 255px;
+        height: 50px;
+        margin-left: -88px;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #888;
+    }
+
+    .login .login-password-box {
+        width: 255px;
+        height: 50px;
+        margin-left: -88px;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid #888;
+        margin-right: 13px;
+        margin-top: -3px;
+    }
+
+
+    .login table {
+        margin: 33px 0 0 0;
+    }
+
+
+    /*CHECKBOX*/
+
+    .login .login-check-box {
+        left: -88px;
+        position: relative;
+    }
+
+    /*LOGIN BUTTON*/
+
+    .login .login-btn {
+        width: 90px;
+        height: 30px;
+        background-color: #4F8ECD;
+        border-radius: 5px;
+        color: #fff;
+        border: none;
+        margin: 10px 0 0 78px;
+    }
+
+    /* REGISTRATION*/
+
+    .login .regi {
+        margin-top: 90px;
+        margin-right: -139px;
+    }
+
+    .login .regi-header {
+        background-color: rgb(228, 228, 228);
+        width: 488px;
+        position: absolute;
+        border-radius: 5px 5px 0 0;
+        margin: -90px 0 0 0;
+        border-bottom: 1px solid #888;
+    }
+
+        .login .regi-header h2 {
+            margin-left: 30px;
+        }
+
+    /*SUBMIT BTN*/
+
+    .login .submit-btn {
+        width: 90px;
+        height: 30px;
+        background-color: #4F8ECD;
+        border-radius: 5px;
+        color: #fff;
+        border: none;
+        margin: 10px 0 0 186px;
+    }
+
+    /*INPUT*/
+
+    .login .regi-username {
+        width: 255px;
+        height: 50px;
+        margin-left: 20px;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #888;
+        position: absolute;
+        margin-right: 104px;
+        margin-top: -24px;
+    }
+
+    .login .regi-password {
+        width: 255px;
+        height: 50px;
+        margin-left: 20px;
+        border: 1px solid #888;
+        position: absolute;
+        margin-right: 104px;
+        margin-top: -25px;
+    }
+
+    .login .regi-password-confirm {
+        width: 255px;
+        height: 50px;
+        margin-left: 20px;
+        border: 1px solid #888;
+        position: absolute;
+        margin-right: 104px;
+        margin-top: -26px;
+    }
+
+    .login .regi-mail {
+        width: 255px;
+        height: 50px;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid #888;
+        position: absolute;
+        margin-right: 104px;
+        margin-top: -27px;
+    }
+
+    /*TEXT*/
+
+    .login .regi-input-text {
+        padding-left: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    body{
+        min-height: 100%;
+    }
+
+    .login .content {
+        width: 700px;
+        margin: 0 auto;
+        height: 600px;
+    }
+
+    .login .left {
+        background-color: #fff;
+        border-radius: 5px;
+        height: 300px;
+        width: 250px;
+        margin-top: 50px;
+    }
+
+    .login .right {
+        float: right;
+        background-color: #fff;
+        border-radius: 5px;
+        height: 395px;
+        margin-top: 50px;
+        width: 395px;
+    }
+
+    .login .blue {
+        background: #2C3E50;
+    }
+
+    .login th {
+        border: none;
+    }
+
+    .login .login-box-header h2 {
+        margin-left: 30px;
+    }
+
+    .login .login-box-header {
+        background-color: rgb(228, 228, 228);
+        width: 250px;
+        position: absolute;
+        border-radius: 5px 5px 0 0;
+        margin: -101px 0 0 -97px;
+        border-bottom: 1px solid #888;
+    }
+
+    .login .login-username-box {
+        width: 160px;
+        height: 50px;
+        margin-left: -54px;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #888;
+        padding-left: 15px;
+    }
+
+    .login .login-password-box {
+        width: 160px;
+        height: 50px;
+        margin-left: -54px;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid #888;
+        margin-right: 13px;
+        margin-top: -3px;
+        padding-left: 15px;
+    }
+
+
+    .login table {
+        margin: 33px 0 0 0;
+    }
+
+
+    /*CHECKBOX*/
+
+    .login .login-check-box {
+        left: -57px;
+        position: relative;
+        font-size: 13px;
+
+    }
+
+    /*LOGIN BUTTON*/
+
+    .login .login-btn {
+        width: 90px;
+        height: 30px;
+        background-color: #4F8ECD;
+        border-radius: 5px;
+        color: #fff;
+        border: none;
+        margin: 10px 0 0 32px;
+    }
+
+    /* REGISTRATION*/
+
+    .login .regi {
+        margin-top: 120px;
+        margin-right: -139px;
+    }
+
+    .login .regi-header {
+        background-color: rgb(228, 228, 228);
+        width: 385px;
+        position: absolute;
+        border-radius: 5px 5px 0 0;
+        margin: -120px 0 0 0;
+        border-bottom: 1px solid #888;
+        height: 64px;
+    }
+
+        .login .regi-header h2 {
+            margin-left: 30px;
+        }
+
+    /*SUBMIT BTN*/
+
+    .login .submit-btn {
+        width: 90px;
+        height: 30px;
+        background-color: #4F8ECD;
+        border-radius: 5px;
+        color: #fff;
+        border: none;
+        margin: 10px 0 0 127px;
+    }
+
+    /*INPUT*/
+
+    .login .regi-username {
+        width: 180px;
+        height: 50px;
+        margin-left: 20px;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #888;
+        position: absolute;
+        margin-right: 104px;
+        margin-top: -34px;
+        padding-left: 15px;
+    }
+
+    .login .regi-password {
+        width: 180px;
+        height: 50px;
+        margin-left: 20px;
+        border: 1px solid #888;
+        position: absolute;
+        margin-right: 104px;
+        margin-top: -25px;
+        padding-left: 15px;
+    }
+
+    .login .regi-password-confirm {
+        width: 180px;
+        height: 50px;
+        margin-left: 20px;
+        border: 1px solid #888;
+        position: absolute;
+        margin-right: 104px;
+        margin-top: -26px;
+        padding-left: 15px;
+    }
+
+    .login .regi-mail {
+        width: 180px;
+        height: 50px;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid #888;
+        position: absolute;
+        margin-right: 104px;
+        margin-top: -27px;
+        padding-left: 15px;
+    }
+
+    /*TEXT*/
+
+    .login .regi-input-text {
+        padding-left: 35px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 915px) {
+}
+
+@media (max-width: 768px) {
+}
+
+
+
+@media (max-width: 500px) {
 }
