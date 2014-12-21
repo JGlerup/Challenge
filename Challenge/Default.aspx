@@ -28,7 +28,7 @@
                             <label class="videoTitel3">Video 3</label><br />
                             <img id="video3" src="../Images/defaultVideo.png" />
                         </div>
-                        <h3 class="underlined">FEATURED</h3>
+                        <h3 class="underlined2">FEATURED</h3>
                         <div class="inline marginRight" id="videoDiv4">
                             <label class="videoTitel1">Video 1</label><br />
                             <img id="video4" src="../Images/defaultVideo.png" />

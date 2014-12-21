@@ -29,11 +29,11 @@ namespace Challenge.Profile
             try
             {
                 var videoFiles = Directory.EnumerateFiles(Server.MapPath("~/Video/" + this.User.Identity.Name + "/"),"*.mp4");
-                literalVideo.Text = "<table><tbody><tr><th>Name</th><th>Video</th></tr>";
+                literalVideo.Text = "<table><tbody>";
                 foreach (string currentFile in videoFiles)
                 {
                     //literalVideo.Text += "<tr><th>" + Path.GetFileName(currentFile) + "</th><th><video width='320' height='240' controls><source src='" + Server.MapPath("~/Video/") + this.Page.User.Identity.Name + "\\" + Path.GetFileName(currentFile) + "' type='video/mp4'></video></th>";
-                    literalVideo.Text += "<tr><th>" + Path.GetFileName(currentFile) + "</th><th><video width='320' height='240' controls><source src='http://localhost:52326/Video/" + this.Page.User.Identity.Name + "\\" + Path.GetFileName(currentFile) + "' type='video/mp4'></video></th>";
+                    literalVideo.Text += "<tr><th>" + Path.GetFileName(currentFile) + "</th></tr><tr><th><video width='320' height='240' controls><source src='http://localhost:52326/Video/" + this.Page.User.Identity.Name + "\\" + Path.GetFileName(currentFile) + "' type='video/mp4'></video></th>";
                     
                     
                 }

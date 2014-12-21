@@ -6,7 +6,7 @@
         <div class="content-content">
             <div class="blue">
                 <div class="content-blue">
-                    <h2><%: Title %></h2>
+                    <h2 class="upload-header"><%: Title %></h2>
 
                     <asp:Menu ID="navMenu" runat="server" Orientation="Horizontal">
                         <Items>
@@ -27,12 +27,12 @@
                     </asp:Menu>
 
                     <div class="left">
-                        <div class="upload">
+                        <div class="upload-vid">
                             <asp:Label ID="Label2" runat="server">Upload a video</asp:Label>
                             <br />
-                            <asp:FileUpload ID="VideoUpload" runat="server" /><br />
+                            <asp:FileUpload ID="VideoUpload" CssClass="pick-file" runat="server" /><br />
                             <br />
-                            <asp:Button Text="Upload" ID="Submit" runat="server" OnClick="Submit_Click" />&nbsp;<br />
+                            <asp:Button Text="Upload" ID="Submit" CssClass="submit-vid" runat="server" OnClick="Submit_Click" />&nbsp;<br />
                             <br />
                             <asp:Label ID="Label1" runat="server"></asp:Label>
                         </div>

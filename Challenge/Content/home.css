@@ -64,10 +64,21 @@ body {
     width: 200px;
 }
 
+.home #video1, #video2, #video3, #video4, #video5, #video6{
+    width: 200px;
+}
+
 .underlined {
     text-decoration: underline;
     color: #fff;
     font-size: 17px;
+}
+
+.underlined2 {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 56px;
 }
 
 .home .videoTitel1, .videoTitel2, .videoTitel3 {
@@ -75,7 +86,7 @@ body {
     font-size: 14px;
 }
 
-.home #video1, #video2, #video3, #video4, #video5, #video6{
+.home #video1, #video2, #video3, #video4, #video5, #video6 {
     border-radius: 15px;
 }
 
@@ -107,24 +118,24 @@ body {
     margin-left: 15px;
 }
 
-.home .group{
+.home .group {
     width: 40px;
     margin: 5px 0 0 15px;
     position: absolute;
 }
 
-.home .home-text{
+.home .home-text {
     margin-left: 80px;
 }
 
-.home .inner-right{
+.home .inner-right {
     float: right;
     width: 450px;
     height: 310px;
     margin-top: -314px;
 }
 
-.home .image{
+.home .image {
     margin: 115px 0 0 190px;
     width: 40px;
     height: 40px;
@@ -152,6 +163,7 @@ input[type="select"] {
     .jumbotron {
         margin-top: 20px;
     }
+
     .body-content {
         padding: 0;
     }
