@@ -178,6 +178,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\search54.svg" />
     <Content Include="Images\checkmark-48.png" />
+    <Content Include="Images\menu-48.png" />
     <Content Include="Images\separatorline.png" />
     <Content Include="Images\cash_receiving-50.png" />
     <Content Include="Images\defaultVideo.png" />
