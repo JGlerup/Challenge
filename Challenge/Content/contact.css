@@ -13,18 +13,19 @@
     margin: 0 auto;
 }
 
-.contact .contact-box{
+.contact .contact-box {
     width: 950px;
     height: 500px;
     border: 1px solid #000;
     margin: 0 auto;
     margin-top: 75px;
 }
+
 .contact h1, h2, h3 {
     color: #202b36;
 }
 
-.contact .contact-titel{
+.contact .contact-titel {
     position: absolute;
     margin-top: -19px;
     margin-left: 30px;
@@ -32,19 +33,19 @@
     padding: 0 10px;
 }
 
-.contact .contact-left{
+.contact .contact-left {
     width: 350px;
     float: left;
     margin: 25px 0 0 40px;
 }
 
-.contact .contact-right{
+.contact .contact-right {
     width: 350px;
     float: right;
     margin: 25px 150px 0 0;
 }
 
-.contact .speach{
+.contact .speach {
     width: 30px;
     clear: both;
     float: left;
@@ -53,11 +54,11 @@
 
 /*KONTAKTFORMULAR*/
 
-.contact .contact-labels{
+.contact .contact-labels {
     font-size: 15px;
 }
 
-.contact .contact-btn{
+.contact .contact-btn {
     width: 100px;
     height: 30px;
     background-color: #2c3e50;
@@ -67,6 +68,224 @@
 }
 
 .contact .contact-btn:hover {
-    background-color:#007FFF;
+    background-color: #007FFF;
     color: white;
-} 
+}
+
+.contact input.Your_Name {
+    width: 250px;
+    height: 30px;
+}
+
+.contact input.Your_Email {
+    width: 250px;
+    height: 30px;
+}
+
+.contact input.Your_Subject {
+    width: 250px;
+    height: 30px;
+}
+
+.contact input.Message {
+    width: 250px;
+}
+
+/*RESPONSIV*/
+@media (max-width: 1215px) {
+    html {
+        width: 1215px;
+        overflow-x: hidden;
+    }
+
+    .contact input.Your_Name {
+        width: 250px;
+        height: 30px;
+    }
+
+    .contact input.Your_Email {
+        width: 250px;
+        height: 30px;
+    }
+
+    .contact input.Your_Subject {
+        width: 250px;
+        height: 30px;
+    }
+
+    .contact input.Message {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        width: 1024px;
+        overflow-x: hidden;
+    }
+
+    .contact input.Your_Name {
+        width: 250px;
+        height: 30px;
+    }
+
+    .contact input.Your_Email {
+        width: 250px;
+        height: 30px;
+    }
+
+    .contact input.Your_Subject {
+        width: 250px;
+        height: 30px;
+    }
+
+    .contact input.Message {
+        width: 250px;
+    }
+}
+
+@media (max-width: 915px) {
+    html {
+        width: 915px;
+        overflow-x: hidden;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+        .contact .contact-box {
+            width: 700px;
+            height: 800px;
+        }
+
+        .contact .contact-right {
+            float: none;
+            margin: 0 0 30px 150px;
+        }
+
+        .contact .contact-left {
+            width: 400px;
+            margin: 40px 0 50px 150px;
+        }
+
+        .contact input.Your_Name {
+            width: 400px;
+            height: 30px;
+        }
+
+        .contact input.Your_Email {
+            width: 400px;
+            height: 30px;
+        }
+
+        .contact input.Your_Subject {
+            width: 400px;
+            height: 30px;
+        }
+
+        .contact input.Message {
+            width: 400px;
+        }
+}
+
+@media (max-width: 768px) {
+    html {
+        width: 768px;
+        overflow-x: hidden;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+        .contact .inner-contact {
+            width: 768px;
+        }
+
+        .contact .contact-box {
+            width: 500px;
+            height: 800px;
+        }
+
+        .contact .contact-right {
+            float: none;
+            margin: 0 0 30px 60px;
+        }
+
+        .contact .contact-left {
+            width: 400px;
+            margin: 40px 0 50px 60px;
+        }
+
+        .contact input.Your_Name {
+            width: 300px;
+            height: 30px;
+        }
+
+        .contact input.Your_Email {
+            width: 300px;
+            height: 30px;
+        }
+
+        .contact input.Your_Subject {
+            width: 300px;
+            height: 30px;
+        }
+
+        .contact input.Message {
+            width: 300px;
+        }
+}
+
+
+
+@media (max-width: 500px) {
+    html {
+        width: 500px;
+        overflow-x: hidden;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+        .contact .inner-contact {
+            width: 500px;
+        }
+
+        .contact .contact-box {
+            width: 300px;
+            height: 850px;
+        }
+
+        .contact .contact-right {
+            float: none;
+            margin: 400px 0 30px 10px;
+        }
+
+        .contact .contact-left {
+            width: 270px;
+            margin: 40px 0 0px 20px;
+            display: block;
+        }
+
+        .contact input.Your_Name {
+            width: 250px;
+            height: 30px;
+        }
+
+        .contact input.Your_Email {
+            width: 250px;
+            height: 30px;
+        }
+
+        .contact input.Your_Subject {
+            width: 250px;
+            height: 30px;
+        }
+
+        .contact input.Message {
+            width: 250px;
+        }
+}
