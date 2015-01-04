@@ -49,6 +49,18 @@ body {
     margin-top: 36px;
 }
 
+.home .googlePlay{
+    position: absolute;
+    margin-top: -144px;
+    margin-left: -12px;
+}
+
+.home .itunes{
+    position: absolute;
+    margin-top: -139px;
+    margin-left: 128px;
+}
+
 /*VIDEOER*/
 
 .home .marginRight {
