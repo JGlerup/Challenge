@@ -1,11 +1,16 @@
-﻿body {
+﻿html{
+    overflow-x:hidden;
+}
+
+body {
     min-height: 100%;
 }
 
 .login .content {
     width: 1000px;
     margin: 0 auto;
-    height: 535px;
+    height: 800px;
+    margin-bottom: -20px;
 }
 
 .login .left {
@@ -98,7 +103,7 @@
 
 .login .regi-header {
     background-color: rgb(228, 228, 228);
-    width: 488px;
+    width: 463px;
     position: absolute;
     border-radius: 5px 5px 0 0;
     margin: -90px 0 0 0;
@@ -168,7 +173,23 @@
 /*TEXT*/
 
 .login .regi-input-text {
-    padding-left: 35px;
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+   padding-left: 10px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   padding-left: 10px; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   padding-left: 10px;
+}
+
+:-ms-input-placeholder {  
+   padding-left: 10px;  
 }
 
 /*MEDIA*/
@@ -176,6 +197,11 @@
 /* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
 
 @media (max-width: 1215px) {
+
+    html{
+        width: 1215px;
+        overflow-x: hidden;
+    }
     body {
         min-height: 100%;
     }
@@ -183,7 +209,8 @@
     .login .content {
         width: 1000px;
         margin: 0 auto;
-        height: 535px;
+        height: 800px;
+        margin-bottom: -20px;
     }
 
     .login .left {
@@ -276,7 +303,7 @@
 
     .login .regi-header {
         background-color: rgb(228, 228, 228);
-        width: 488px;
+        width: 463px;
         position: absolute;
         border-radius: 5px 5px 0 0;
         margin: -90px 0 0 0;
@@ -352,6 +379,11 @@
 
 @media (max-width: 1024px) {
 
+    html{
+        width: 1024px;
+        overflow-x: hidden;
+    }
+
     body{
         min-height: 100%;
     }
@@ -359,7 +391,8 @@
     .login .content {
         width: 700px;
         margin: 0 auto;
-        height: 600px;
+        height: 800px;
+        margin-bottom: -20px;
     }
 
     .login .left {
@@ -537,11 +570,16 @@
 }
 
 @media (max-width: 915px) {
+    html{
+        width: 915px;
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 768px) {
     html{
         width: 768px;
+        overflow-x: hidden;
     }
     .login .content{
         width: 768px;
@@ -559,7 +597,8 @@
 
 @media (max-width: 500px) {
     html{
-        width: 500px;
+        min-width: 500px;
+        overflow-x: hidden;
     }
 
     .login .content{
