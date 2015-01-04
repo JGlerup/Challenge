@@ -224,13 +224,16 @@ input[type="select"] {
     }
 
     .home .right {
-        width: 463px;
+        width: 475px;
         margin-left: 30px;
     }
 
     .home .phone {
         height: 450px;
-        margin-left: 40px;
+    }
+
+    .home .left{
+        margin-left: 45px;
     }
 
     .home .videoTitel3, #video3, #video6, #videoDiv3, #videoDiv6 {
@@ -267,6 +270,11 @@ input[type="select"] {
 
     .home .inner-right {
         display: none;
+    }
+
+    .home .inner-left{
+        margin: 0;
+        margin-top: 50px;
     }
 
     .home .navbar {
