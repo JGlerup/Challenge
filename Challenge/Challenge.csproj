@@ -166,6 +166,7 @@
     <Content Include="Content\guide.css" />
     <Content Include="Content\login.css" />
     <Content Include="Content\master.css" />
+    <Content Include="Content\newsadmin.css" />
     <Content Include="Content\profile.css" />
     <Content Include="Content\rules.css" />
     <Content Include="Content\style.css" />
@@ -197,6 +198,7 @@
     <Content Include="Profile\Achievements.aspx" />
     <Content Include="Profile\Activation.aspx" />
     <Content Include="Profile\Login.aspx" />
+    <Content Include="Profile\Newsadmin.aspx" />
     <Content Include="Profile\Profile.aspx" />
     <Content Include="Profile\Upload.aspx" />
     <Content Include="Profile\Useradmin.aspx" />
@@ -410,6 +412,13 @@
     </Compile>
     <Compile Include="Profile\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Newsadmin.aspx.cs">
+      <DependentUpon>Newsadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Newsadmin.aspx.designer.cs">
+      <DependentUpon>Newsadmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
