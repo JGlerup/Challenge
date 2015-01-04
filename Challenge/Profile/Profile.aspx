@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="right">
-                        <div style="border: 1px solid #888;">
+                        <div class="border" style="border: 1px solid #888;">
                             <asp:GridView ID="UserFeed" AutoGenerateColumns="true" runat="server">
                             </asp:GridView>
                         </div>

@@ -134,3 +134,62 @@
     .upload .hiddenUpload {
         display: none;
     }
+
+
+    /*RESPONSIV*/
+@media (max-width: 1215px) {
+    html {
+        width: 1215px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        width: 1024px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 915px) {
+    html {
+        width: 915px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        width: 768px;
+        overflow-x: hidden;
+    }
+
+    .upload .upload-vid{
+        display: none;
+    }
+
+    .upload .right{
+        float: none;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        width: 500px;
+        overflow-x: hidden;
+    }
+
+    .upload .upload-vid{
+        display: none;
+    }
+    
+    .upload #MainContent_navMenu{
+        display: none;
+    }
+
+    .upload .right{
+        float: none;
+        margin-left: 50px;
+    }
+}

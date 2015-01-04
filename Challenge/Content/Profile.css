@@ -213,3 +213,72 @@ body {
 .profile .hiddenUpload {
     display: none;
 }
+
+
+/*RESPONSIV*/
+@media (max-width: 1215px) {
+    html {
+        width: 1215px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        width: 1024px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 915px) {
+    html {
+        width: 915px;
+        overflow-x: hidden;
+    }
+
+    .profile .right{
+        width: auto;
+        margin-right: 100px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    html {
+        width: 768px;
+        overflow-x: hidden;
+    }
+    
+    .profile .left{
+        float: none;
+        margin-left: 200px;
+    }
+
+    .profile .right{
+        width: auto;
+        margin-right: 350px;
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        width: 500px;
+        overflow-x: hidden;
+    }
+
+    .profile #MainContent_navMenu {
+        display: none;
+    }
+
+    .profile .border {
+        display: none;
+        border: none;
+    }
+
+    .profile .left {
+        float: none;
+        margin-left: 50px;
+    }
+}
