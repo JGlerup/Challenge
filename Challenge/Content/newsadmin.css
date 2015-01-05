@@ -36,3 +36,14 @@
     float: left;
     margin: 25px 40px 0 40px;
 }
+
+td{
+    text-align:center;
+}
+
+table#MainContent_NewsGrid{
+    width: 950px;
+    border: 1px solid #000;
+    margin-right: 25px;
+
+}

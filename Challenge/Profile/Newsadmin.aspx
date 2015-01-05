@@ -26,52 +26,61 @@
                     <asp:Parameter Name="NewsId" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="NewsId" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" ShowFooter="True">
-            <AlternatingRowStyle BackColor="White" />
+        <asp:GridView ID="NewsGrid" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="3" DataKeyNames="NewsId" DataSourceID="SqlDataSource1" GridLines="Vertical" ShowFooter="True" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px">
+            <AlternatingRowStyle BackColor="#DCDCDC" />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                <asp:TemplateField HeaderText="NewsId" InsertVisible="False" SortExpression="NewsId">
+                <asp:TemplateField  HeaderText="NewsId" InsertVisible="False" SortExpression="NewsId">
                     <EditItemTemplate>
-                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("NewsId") %>'></asp:Label>
+                        <asp:Label ID="NewsEdit" runat="server" Text='<%# Eval("NewsId") %>'></asp:Label>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label4" runat="server" Text='<%# Bind("NewsId") %>'></asp:Label>
+                        <asp:Label ID="NewsContent" runat="server" Text='<%# Bind("NewsId") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
-                        <asp:LinkButton ID="InsertNews" runat="server">Create News</asp:LinkButton>
+                        <asp:LinkButton ID="InsertNews" runat="server" ForeColor="Black">Create News</asp:LinkButton>
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Title" SortExpression="Title">
                     <EditItemTemplate>
-                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Title") %>'></asp:TextBox>
+                        <asp:TextBox ID="EditTitle" runat="server" Text='<%# Bind("Title") %>'></asp:TextBox>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("Title") %>'></asp:Label>
+                        <asp:Label ID="ContentTitle" runat="server" Text='<%# Bind("Title") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="txtTitle" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="InsertTitle" runat="server"></asp:TextBox>
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="ContentText" SortExpression="ContentText">
                     <EditItemTemplate>
-                        <asp:TextBox ID="TextBox2" runat="server" Height="120px" Rows="50" Text='<%# Bind("ContentText", "{0}") %>' TextMode="MultiLine" Width="430px"></asp:TextBox>
+                        <asp:TextBox ID="EditContent" runat="server" Height="120px" Rows="50" Text='<%# Bind("ContentText", "{0}") %>' TextMode="MultiLine" Width="430px"></asp:TextBox>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("ContentText") %>'></asp:Label>
+                        <asp:Label ID="TextContent" runat="server" Text='<%# Bind("ContentText") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="txtContent" runat="server" Height="120px" Rows="50" TextMode="MultiLine" Width="420px"></asp:TextBox>
+                        <asp:TextBox ID="InsertContent" runat="server" Height="120px" Rows="50" TextMode="MultiLine" Width="420px"></asp:TextBox>
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="CreatedDate" InsertVisible="False" SortExpression="CreatedDate">
                     <EditItemTemplate>
-                        <asp:TextBox ID="TextBox3" runat="server" ReadOnly="True" Text='<%# Bind("CreatedDate") %>'></asp:TextBox>
+                        <asp:TextBox ID="EditDate" runat="server" ReadOnly="True" Text='<%# Bind("CreatedDate") %>'></asp:TextBox>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("CreatedDate") %>'></asp:Label>
+                        <asp:Label ID="ContentDate" runat="server" Text='<%# Bind("CreatedDate") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
+            <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+            <HeaderStyle BackColor="#2C3E50" Font-Bold="True" ForeColor="White"/>
+            <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+            <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+            <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+            <SortedAscendingCellStyle BackColor="#F1F1F1" />
+            <SortedAscendingHeaderStyle BackColor="#0000A9" />
+            <SortedDescendingCellStyle BackColor="#CAC9C9" />
+            <SortedDescendingHeaderStyle BackColor="#000065" />
             </asp:GridView>
         </div>
     </div>
