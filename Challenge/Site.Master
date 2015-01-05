@@ -46,10 +46,10 @@
             </div>
             <div class="nav">
                 <div class="navbar-bottom">
-                    <a class="navbar-content" runat="server" href="~/Contact">CONTACT</a>
-                    <a class="navbar-content" runat="server" href="#">NEWS</a>
-                    <a class="navbar-content" runat="server" href="#">CHARITIES</a>
-                    <a class="navbar-content" runat="server" href="#">CHALLENGES</a>
+                    <a class="navbar-content" runat="server" href="~/Contact">KONTAKT</a>
+                    <a class="navbar-content" runat="server" href="#">NYHEDER</a>
+                    <a class="navbar-content" runat="server" href="#">VELGØRENHED</a>
+                    <a class="navbar-content" runat="server" href="~/Challenges/MostPopular">UDFORDRINGER</a>
                 </div>
                 <select>
                     <option value="./">Home</option>
