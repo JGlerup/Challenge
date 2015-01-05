@@ -161,6 +161,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Challenges\MostPopular.aspx" />
     <Content Include="Content\contact.css" />
     <Content Include="Content\faq.css" />
     <Content Include="Content\guide.css" />
@@ -374,6 +375,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Challenges\MostPopular.aspx.cs">
+      <DependentUpon>MostPopular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Challenges\MostPopular.aspx.designer.cs">
+      <DependentUpon>MostPopular.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
