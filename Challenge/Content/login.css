@@ -75,6 +75,10 @@ body {
 }
 
 
+.login td{
+    text-align: left;
+}
+
 /*CHECKBOX*/
 
 .login .login-check-box {
