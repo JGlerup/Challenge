@@ -11,4 +11,6 @@
          <li><a href="/Challenges/Browse">Browse</a></li>
       </ul>
 
+     <asp:Literal ID="literalVideo" runat="server"></asp:Literal>
+
 </asp:Content>

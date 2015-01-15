@@ -10,5 +10,5 @@
          <li><a>|</a></li>
          <li><a href="/Challenges/Browse">Browse</a></li>
       </ul>
-
+    
 </asp:Content>
