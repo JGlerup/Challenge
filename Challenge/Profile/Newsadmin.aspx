@@ -10,7 +10,7 @@
                 </div>
             </div>
             <br />
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:aspnetdb %>" DeleteCommand="DELETE FROM [News] WHERE [NewsId] = @NewsId" InsertCommand="INSERT INTO [News] ([Title], [ContentText], [CreatedDate]) VALUES (@Title, @ContentText, @CreatedDate)" SelectCommand="SELECT [Title], [ContentText], [CreatedDate], [NewsId] FROM [News]" UpdateCommand="UPDATE [News] SET [Title] = @Title, [ContentText] = @ContentText, [CreatedDate] = @CreatedDate WHERE [NewsId] = @NewsId">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:aspnetdb %>" DeleteCommand="DELETE FROM [News] WHERE [NewsId] = @NewsId" InsertCommand="INSERT INTO [News] ([Title], [ContentText], [CreatedDate]) VALUES (@Title, @ContentText, SYSDATETIME())" SelectCommand="SELECT [Title], [ContentText], [CreatedDate], [NewsId] FROM [News]" UpdateCommand="UPDATE [News] SET [Title] = @Title, [ContentText] = @ContentText, [CreatedDate] = @CreatedDate WHERE [NewsId] = @NewsId">
                 <DeleteParameters>
                     <asp:Parameter Name="NewsId" Type="Int32" />
                 </DeleteParameters>
@@ -38,7 +38,7 @@
                         <asp:Label ID="NewsContent" runat="server" Text='<%# Bind("NewsId") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
-                        <asp:LinkButton ID="InsertNews" runat="server" ForeColor="Black">Create News</asp:LinkButton>
+                        <asp:LinkButton ID="InsertNews" OnClick="InsertNews_Click" runat="server" ForeColor="Black">Create News</asp:LinkButton>
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Title" SortExpression="Title">
