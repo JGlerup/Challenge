@@ -447,6 +447,7 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Challenges\" />
     <Folder Include="Controls\" />
     <Folder Include="Images\Profiles\" />
     <Folder Include="Video\Glerup\" />
