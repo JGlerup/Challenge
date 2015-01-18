@@ -13,5 +13,14 @@ namespace Challenge.Profile
         {
 
         }
+
+        protected void InsertNews_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.InsertParameters["Title"].DefaultValue = ((TextBox)NewsGrid.FooterRow.FindControl("InsertTitle")).Text;
+            SqlDataSource1.InsertParameters["ContentText"].DefaultValue = ((TextBox)NewsGrid.FooterRow.FindControl("InsertContent")).Text;
+
+            SqlDataSource1.Insert();
+        }
+
     }
 }

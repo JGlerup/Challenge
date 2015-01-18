@@ -67,3 +67,21 @@ table#table1 th
     color: white;
 }
 
+.guide #MainContent_naviMenu {
+        position: absolute;
+        margin: -60px 0 0 17px;
+        color: #202b36;
+    }
+
+.guide #MainContent_naviMenu a {
+        color: #202b36;
+    }
+
+.guide #MainContent_naviMenu a:visited {
+        color: #202b36;
+        text-decoration: none;
+    }
+
+.guide #MainContent_naviMenu a:hover {
+        text-decoration: underline;
+    }

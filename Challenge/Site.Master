@@ -40,7 +40,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <a class="navbar-support" runat="server" href="~/Support">Support</a>
+                        <a class="navbar-support" runat="server" href="~/Support/Support">Support</a>
                     </div>
                 </div>
             </div>
