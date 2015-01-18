@@ -13,9 +13,14 @@
                 <div class="content-blue">
                     <div class="left">
                         <img class="phone" src="../Images/phone_png.png" />
+                        <a class="googlePlay" href="https://play.google.com/store/apps/details?id=Challenge Game" target="_blank">
+                            <img alt="Get it on Google Play"
+                                src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+                        </a>
+                        <a class="itunes" href="#" target="_blank" style="display: inline-block; overflow: hidden; background: url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat; @media only screen{background-image: url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg); }"></a>
                     </div>
                     <div class="right">
-                        <h3 class="underlined">HOT</h3>
+                        <h3 class="underlined">Mest Populære</h3>
                         <div class="inline marginRight" id="videoDiv1">
                             <label class="videoTitel1">Video 1</label><br />
                             <img id="video1" src="../Images/defaultVideo.png" />
@@ -28,7 +33,7 @@
                             <label class="videoTitel3">Video 3</label><br />
                             <img id="video3" src="../Images/defaultVideo.png" />
                         </div>
-                        <h3 class="underlined">FEATURED</h3>
+                        <h3 class="underlined2">Nyeste</h3>
                         <div class="inline marginRight" id="videoDiv4">
                             <label class="videoTitel1">Video 1</label><br />
                             <img id="video4" src="../Images/defaultVideo.png" />

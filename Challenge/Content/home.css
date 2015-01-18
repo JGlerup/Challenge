@@ -26,7 +26,7 @@ body {
 .home div.blue {
     background-color: #2c3e50;
     width: 100%;
-    box-shadow: 0px 2px 6px #414141;
+    box-shadow: 0px 8px 5px -4px #414141;
 }
 
 /*TELEFON*/
@@ -49,6 +49,20 @@ body {
     margin-top: 36px;
 }
 
+.home .googlePlay {
+    position: absolute;
+    margin-top: -138px;
+    margin-left: -12px;
+}
+
+.home .itunes {
+    position: absolute;
+    margin-top: -133px;
+    margin-left: 128px;
+    width: 135px;
+    height: 40px;
+}
+
 /*VIDEOER*/
 
 .home .marginRight {
@@ -64,10 +78,21 @@ body {
     width: 200px;
 }
 
+.home #video1, #video2, #video3, #video4, #video5, #video6 {
+    width: 200px;
+}
+
 .underlined {
     text-decoration: underline;
     color: #fff;
     font-size: 17px;
+}
+
+.underlined2 {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 56px;
 }
 
 .home .videoTitel1, .videoTitel2, .videoTitel3 {
@@ -75,7 +100,7 @@ body {
     font-size: 14px;
 }
 
-.home #video1, #video2, #video3, #video4, #video5, #video6{
+.home #video1, #video2, #video3, #video4, #video5, #video6 {
     border-radius: 15px;
 }
 
@@ -107,24 +132,24 @@ body {
     margin-left: 15px;
 }
 
-.home .group{
+.home .group {
     width: 40px;
     margin: 5px 0 0 15px;
     position: absolute;
 }
 
-.home .home-text{
+.home .home-text {
     margin-left: 80px;
 }
 
-.home .inner-right{
+.home .inner-right {
     float: right;
     width: 450px;
     height: 310px;
     margin-top: -314px;
 }
 
-.home .image{
+.home .image {
     margin: 115px 0 0 190px;
     width: 40px;
     height: 40px;
@@ -147,12 +172,152 @@ input[type="select"] {
     max-width: 280px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .jumbotron {
-        margin-top: 20px;
+/*RESPONSIV*/
+@media (max-width: 1215px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 915px) {
+    html {
+        width: 915px;
     }
-    .body-content {
-        padding: 0;
+
+    .home .content-blue {
+        width: 915px;
+    }
+
+    .home .right {
+        width: 510px;
+    }
+
+    .home .videoTitel3, #video3, #video6, #videoDiv3, #videoDiv6 {
+        display: none;
+    }
+
+    .home .left {
+        margin-left: 120px;
+        width: 260px;
+    }
+
+    .home .inner-white {
+        width: 915px;
+    }
+
+    .home .inner-left {
+        width: 450px;
+        margin-left: 110px;
+    }
+
+    .home .inner-right img {
+        margin-left: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        width: 768px;
+    }
+
+    .home .content-blue {
+        width: 768px;
+        height: 480px;
+    }
+
+    .home .inner-white {
+        width: 768px;
+    }
+
+    .home .inner-right {
+        display: none;
+    }
+
+    .home .inner-left {
+        margin-left: 40px;
+    }
+
+    .home .right {
+        width: 475px;
+        margin-left: 30px;
+    }
+
+    .home .phone {
+        height: 450px;
+    }
+
+    .home .left {
+        margin-left: 45px;
+    }
+
+    .home .videoTitel3, #video3, #video6, #videoDiv3, #videoDiv6 {
+        display: none;
+    }
+
+    .home .googlePlay {
+        position: absolute;
+        margin-top: 16px;
+        margin-left: -235px;
+        width: 100px;
+    }
+
+    .home .itunes {
+        position: absolute;
+        margin-top: 370px;
+        margin-left: -125px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        width: 500px;
+    }
+
+    .home .content-blue {
+        height: 500px;
+        width: 500px;
+    }
+
+    .home .right {
+        display: none;
+    }
+
+    .home .left {
+        width: 482px;
+    }
+
+    .home .phone {
+        margin-left: 105px;
+        margin-top: -40px;
+    }
+
+    .home .inner-white {
+        width: 482px;
+    }
+
+    .home .inner-right {
+        display: none;
+    }
+
+    .home .inner-left {
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .home .navbar {
+        width: 500px;
+    }
+
+    .home .googlePlay {
+        position: absolute;
+        margin-top: 310px;
+        margin-left: -250px;
+        width: 100px;
+    }
+
+    .home .itunes {
+        position: absolute;
+        margin-top: 315px;
+        margin-left: -110px;
     }
 }

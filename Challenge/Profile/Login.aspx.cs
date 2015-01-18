@@ -53,7 +53,23 @@ namespace Challenge.Profile
                     default:
                         message = "Registration successful.\\nUser Id: " + userId.ToString();
                         SendActivationEmail(userId);
-                        Directory.CreateDirectory(Server.MapPath("~/Video/") + this.Page.User.Identity.Name + "/");
+                        Directory.CreateDirectory(Server.MapPath("~/Video/") + txtUsername.Text.Trim() + "/");
+
+                        string constr1 = ConfigurationManager.ConnectionStrings["aspnetdb"].ConnectionString;
+                        SqlConnection con1 = new SqlConnection(constr1);
+                        using (con1)
+                        {
+
+                            SqlCommand insertCommand = new SqlCommand(
+                              "INSERT INTO [Feed] ( [UserId], [Time], [What]) SELECT [UserID], SYSDATETIME(), '" + txtUsername.Text.Trim() + ": User created' FROM [Users] Where [UserName] = '" + txtUsername.Text.Trim() + "';",
+                              con1);
+
+                            con1.Open();
+
+                            insertCommand.ExecuteNonQuery();
+                            con1.Close();
+
+                        }
                         break;
                 }
                 ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);

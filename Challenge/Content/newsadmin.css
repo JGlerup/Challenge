@@ -1,0 +1,49 @@
+﻿body {
+}
+
+.newsadmin {
+    height: 100vh;
+    width: 100%;
+    color: #000;
+}
+
+.inner-newsadmin {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.newsadmin .newsadmin-box{
+    width: 950px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+.newsadmin h1, h2, h3 {
+    color: #202b36;
+}
+
+.newsadmin .newsadmin-title{
+    position: absolute;
+    margin-top: -19px;
+    margin-left: 30px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.newsadmin-content{
+    width: auto;
+    float: left;
+    margin: 25px 40px 0 40px;
+}
+
+td{
+    text-align:center;
+}
+
+table#MainContent_NewsGrid{
+    width: 950px;
+    border: 1px solid #000;
+    margin-right: 25px;
+
+}

@@ -161,16 +161,30 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Challenges\Browse.aspx" />
+    <Content Include="Challenges\ChallengesInCity.aspx" />
+    <Content Include="Challenges\MostPopular.aspx" />
+    <Content Include="Challenges\MostRecent.aspx" />
+    <Content Include="Content\Challenges.css" />
     <Content Include="Content\contact.css" />
+    <Content Include="Content\faq.css" />
+    <Content Include="Content\guide.css" />
+    <Content Include="Content\login.css" />
     <Content Include="Content\master.css" />
+    <Content Include="Content\newsadmin.css" />
     <Content Include="Content\profile.css" />
+    <Content Include="Content\rules.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\support.css" />
     <Content Include="Content\upload.css" />
+    <Content Include="Content\useradmin.css" />
     <Content Include="favicon.ico" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\home.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\search54.svg" />
+    <Content Include="Images\checkmark-48.png" />
+    <Content Include="Images\menu-48.png" />
     <Content Include="Images\separatorline.png" />
     <Content Include="Images\cash_receiving-50.png" />
     <Content Include="Images\defaultVideo.png" />
@@ -189,8 +203,10 @@
     <Content Include="Profile\Achievements.aspx" />
     <Content Include="Profile\Activation.aspx" />
     <Content Include="Profile\Login.aspx" />
+    <Content Include="Profile\Newsadmin.aspx" />
     <Content Include="Profile\Profile.aspx" />
     <Content Include="Profile\Upload.aspx" />
+    <Content Include="Profile\Useradmin.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\JavaScript1.js" />
@@ -225,6 +241,9 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="sql\aspnetdb.sql" />
+    <Content Include="Support\FAQ.aspx" />
+    <Content Include="Support\Guideline.aspx" />
+    <Content Include="Support\Rules.aspx" />
     <Content Include="Support\Support.aspx" />
     <Content Include="Video\clip.mp4" />
     <Content Include="ViewSwitcher.ascx" />
@@ -360,6 +379,34 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Challenges\Browse.aspx.cs">
+      <DependentUpon>Browse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Challenges\Browse.aspx.designer.cs">
+      <DependentUpon>Browse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Challenges\ChallengesInCity.aspx.cs">
+      <DependentUpon>ChallengesInCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Challenges\ChallengesInCity.aspx.designer.cs">
+      <DependentUpon>ChallengesInCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Challenges\MostPopular.aspx.cs">
+      <DependentUpon>MostPopular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Challenges\MostPopular.aspx.designer.cs">
+      <DependentUpon>MostPopular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Challenges\MostRecent.aspx.cs">
+      <DependentUpon>MostRecent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Challenges\MostRecent.aspx.designer.cs">
+      <DependentUpon>MostRecent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -399,6 +446,13 @@
     <Compile Include="Profile\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Profile\Newsadmin.aspx.cs">
+      <DependentUpon>Newsadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Newsadmin.aspx.designer.cs">
+      <DependentUpon>Newsadmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Profile\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -412,6 +466,13 @@
     </Compile>
     <Compile Include="Profile\Upload.aspx.designer.cs">
       <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Useradmin.aspx.cs">
+      <DependentUpon>Useradmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Useradmin.aspx.designer.cs">
+      <DependentUpon>Useradmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -429,6 +490,27 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Support\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Guideline.aspx.cs">
+      <DependentUpon>Guideline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Guideline.aspx.designer.cs">
+      <DependentUpon>Guideline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Rules.aspx.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Rules.aspx.designer.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Support\Support.aspx.cs">
       <DependentUpon>Support.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -449,6 +531,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Challenges\" />
     <Folder Include="Controls\" />
+    <Folder Include="Guides\" />
     <Folder Include="Images\Profiles\" />
     <Folder Include="Video\Glerup\" />
   </ItemGroup>

@@ -170,8 +170,69 @@ CREATE TABLE [dbo].[Feed](
 	[UserId] [int] NOT NULL,
 	[Time] [DATETIME] NOT NULL,
 	[What] [nvarchar](100) NOT NULL,
- CONSTRAINT [PK_Feed] PRIMARY KEY CLUSTERED 
+ )
+
+ 
+ GO
+
+ USE [aspnetdb]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[News](
+	[NewsId] [int] IDENTITY(1,1) NOT NULL,
+	[Title] [nvarchar](50),
+	[ContentText] [nvarchar](2500),
+	[CreatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_NewsId] PRIMARY KEY CLUSTERED 
 (
-	[UserId] ASC
+	[NewsId] ASC
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
+
+GO
+
+USE [aspnetdb]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Insert_News]
+	@Title NVARCHAR(50),
+	@ContentText NVARCHAR(2500)
+AS
+BEGIN
+	SET NOCOUNT ON;
+	IF EXISTS(SELECT NewsId FROM News WHERE Title = @Title)
+	BEGIN
+		SELECT -1 -- Titel exists.
+	END
+	ELSE
+	BEGIN
+		INSERT INTO News
+			   ([Title]
+			   ,[ContentText]
+			   ,[CreatedDate])
+		VALUES
+			   (@Title
+			   ,@ContentText
+			   ,GETDATE())
+		
+		SELECT SCOPE_IDENTITY() -- NewsId			   
+     END
+END
+GO
+INSERT INTO News
+SELECT 'Dette er første guide', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', GETDATE()
+UNION ALL
+SELECT 'Fuldendt guide', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', GETDATE()
+GO
