@@ -20,9 +20,9 @@
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
                             <asp:MenuItem Text="Settings"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
-                            <asp:MenuItem Text="News"></asp:MenuItem>
+                            <asp:MenuItem Text="News" NavigateUrl="~/Profile/Newsadmin.aspx"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
-                            <asp:MenuItem Text="Users"></asp:MenuItem>
+                            <asp:MenuItem Text="Users" NavigateUrl="~/Profile/Useradmin.aspx"></asp:MenuItem>
                         </Items>
                     </asp:Menu>
 
