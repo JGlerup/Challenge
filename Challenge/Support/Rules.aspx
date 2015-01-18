@@ -3,6 +3,17 @@
     <div class ="rules">
         <div class="inner-rules">
             <div class ="rules-box">
+                <asp:Menu ID="naviMenu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Support" NavigateUrl="~/Support/Support.aspx"></asp:MenuItem>
+                            <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
+                            <asp:MenuItem Text="FAQ" NavigateUrl="~/Support/FAQ.aspx"></asp:MenuItem>
+                            <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
+                            <asp:MenuItem Text="Guidelines" NavigateUrl="~/Support/Guideline.aspx"></asp:MenuItem>
+                            <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
+                            <asp:MenuItem Text="Rules" NavigateUrl="~/Support/Rules.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
                 <h2 class="rules-title"><%: Title %></h2>
                 <div class ="rules-content">
                     <p> På denne side kan du læse om hvilke regler der er sat op i forbindelse med brug af dette produkt</p>
