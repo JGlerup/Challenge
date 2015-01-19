@@ -12,8 +12,9 @@
          <li><a href="/Challenges/Browse">Browse</a></li>
       </ul>
         <div class="upload">
-     <asp:Literal ID="literalVideo" runat="server"></asp:Literal>
-
+            <div class="Challenge-Video">
+     <asp:Literal ID="literalVideo" runat="server" ></asp:Literal>
+        </div>
 
         </div>
         

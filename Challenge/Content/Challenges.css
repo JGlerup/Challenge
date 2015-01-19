@@ -14,4 +14,8 @@
 .challenge-menu li a:visited{
    color: blue;
 }
+.Challenge-Video{
+    float:left;
+    margin: 0 auto;
+}
 
