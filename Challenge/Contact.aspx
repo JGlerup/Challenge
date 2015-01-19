@@ -2,13 +2,16 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="contact">
-        <div class="inner-contact">
-            <div class="contact-box">
-                <h2 class="contact-titel"><%: Title %></h2>
-                <div class="contact-left">
-                    <p>
-                        <img class="speach" src="Images/speech_bubble-50.png" alt="Contact" />
-                        You can contact us by mail:
+        <div class="content-content">
+            <div class="blue">
+                <div class="content">
+                    <div class="inner-contact">
+                        <div class="contact-box">
+                            <h2 class="contact-titel"><%: Title %></h2>
+                            <div class="contact-left">
+                                <p>
+                                    <img class="speach" src="Images/speech_bubble-50.png" alt="Contact" />
+                                    You can contact us by mail:
                     <script type="text/javascript">
                         //<![CDATA[
                         var x = "function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
@@ -30,57 +33,60 @@
                         while (x = eval(x));
                         //]]>
                     </script>
-                        .
-                    </p>
-                    <p>
-                        Or via the contact form to the right.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor elit quis tristique aliquet. Nam egestas, lacus vel semper faucibus, sapien sapien aliquet turpis, non tempor odio velit et lacus. Aenean id felis nunc. Aliquam at suscipit enim, vitae cursus augue. 
-                    </p>
-                </div>
-                <div class="contact-right">
-                    <asp:Panel ID="Panel1" runat="server" DefaultButton="btnSubmit">
-                        <p>
-                            Please Fill the Following to Send Mail.
-                        </p>
-                        <p class="contact-labels">
-                            Your name:
+                                    .
+                                </p>
+                                <p>
+                                    Or via the contact form to the right.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor elit quis tristique aliquet. Nam egestas, lacus vel semper faucibus, sapien sapien aliquet turpis, non tempor odio velit et lacus. Aenean id felis nunc. Aliquam at suscipit enim, vitae cursus augue. 
+                                </p>
+                            </div>
+                            <div class="contact-right">
+                                <asp:Panel ID="Panel1" runat="server" DefaultButton="btnSubmit">
+                                    <p>
+                                        Please Fill the Following to Send Mail.
+                                    </p>
+                                    <p class="contact-labels">
+                                        Your name:
         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*"
             ControlToValidate="YourName" ValidationGroup="save" /><br />
-                            <asp:TextBox ID="YourName" runat="server" CssClass="Your_Name" />
-                        </p>
-                        <p class="contact-labels">
-                            Your email address:
+                                        <asp:TextBox ID="YourName" runat="server" CssClass="Your_Name" />
+                                    </p>
+                                    <p class="contact-labels">
+                                        Your email address:
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*"
             ControlToValidate="YourEmail" ValidationGroup="save" /><br />
-                            <asp:TextBox ID="YourEmail" runat="server" CssClass="Your_Email" />
-                            <asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator23"
-                                SetFocusOnError="true" Text="Example: username@gmail.com" ControlToValidate="YourEmail"
-                                ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"
-                                ValidationGroup="save" />
-                        </p>
-                        <p class="contact-labels">
-                            Subject:
+                                        <asp:TextBox ID="YourEmail" runat="server" CssClass="Your_Email" />
+                                        <asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator23"
+                                            SetFocusOnError="true" Text="Example: username@gmail.com" ControlToValidate="YourEmail"
+                                            ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"
+                                            ValidationGroup="save" />
+                                    </p>
+                                    <p class="contact-labels">
+                                        Subject:
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*"
             ControlToValidate="YourSubject" ValidationGroup="save" /><br />
-                            <asp:TextBox ID="YourSubject" runat="server" CssClass="Your_Subject" />
-                        </p>
-                        <p class="contact-labels">
-                            Your Question:
+                                        <asp:TextBox ID="YourSubject" runat="server" CssClass="Your_Subject" />
+                                    </p>
+                                    <p class="contact-labels">
+                                        Your Question:
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*"
             ControlToValidate="Comments" ValidationGroup="save" /><br />
-                            <asp:TextBox ID="Comments" runat="server" CssClass="Message"
-                                TextMode="MultiLine" Rows="5" Width="250px" />
-                        </p>
-                        <asp:Button ID="btnSubmit" CssClass="contact-btn" runat="server" Text="Send"
-                            OnClick="Button1_Click" ValidationGroup="save" />
-                    </asp:Panel>
-                    <p>
-                        <asp:Label ID="DisplayMessage" runat="server" Visible="false" />
-                    </p>
+                                        <asp:TextBox ID="Comments" runat="server" CssClass="Message"
+                                            TextMode="MultiLine" Rows="5" Width="250px" />
+                                    </p>
+                                    <asp:Button ID="btnSubmit" CssClass="contact-btn" runat="server" Text="Send"
+                                        OnClick="Button1_Click" ValidationGroup="save" />
+                                </asp:Panel>
+                                <p>
+                                    <asp:Label ID="DisplayMessage" runat="server" Visible="false" />
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </asp:Content>

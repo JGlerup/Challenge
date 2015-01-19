@@ -529,6 +529,7 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Challenges\" />
     <Folder Include="Controls\" />
     <Folder Include="Guides\" />
     <Folder Include="Images\Profiles\" />

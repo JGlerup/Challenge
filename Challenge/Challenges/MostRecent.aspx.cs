@@ -1,7 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -11,6 +16,16 @@ namespace Challenge.Challenges
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            var videoFiles = Directory.EnumerateFiles(Server.MapPath("~/Video/"), "*.mp4", SearchOption.AllDirectories);
+ 
+            literalVideo.Text = "<table><tbody>";
+
+            foreach (string currentFile in videoFiles)
+            {
+                literalVideo.Text += "<tr><th>" + Path.GetFileName(currentFile) + "</th></tr><tr><th><video width='320' height='240' controls><source src='http://localhost:52326/Video/" + Path.GetFileName(Path.GetDirectoryName(currentFile)) + "\\" + Path.GetFileName(currentFile) + "' type='video/mp4'></video></th>";
+
+            }
+            literalVideo.Text += "</tbody></table>";
 
         }
     }

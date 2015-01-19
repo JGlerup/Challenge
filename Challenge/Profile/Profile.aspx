@@ -11,7 +11,7 @@
 
                     <asp:Menu ID="navMenu" runat="server" Orientation="Horizontal">
                         <Items>
-                            <asp:MenuItem Text="Profile" NavigateUrl="~/Profile/Profile.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Profile" NavigateUrl="~/Profile/Profile.aspx" Selected="true"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
                             <asp:MenuItem Text="Uploads" NavigateUrl="~/Profile/Upload.aspx"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
@@ -21,9 +21,9 @@
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
                             <asp:MenuItem Text="Settings"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
-                            <asp:MenuItem Text="News"></asp:MenuItem>
+                            <asp:MenuItem Text="News" NavigateUrl="~/Profile/Newsadmin.aspx"></asp:MenuItem>
                             <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
-                            <asp:MenuItem Text="Users"></asp:MenuItem>
+                            <asp:MenuItem Text="Users" NavigateUrl="~/Profile/Useradmin.aspx"></asp:MenuItem>
                         </Items>
                     </asp:Menu>
 

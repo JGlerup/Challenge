@@ -31,6 +31,17 @@
     <div class ="faq">
         <div class="inner-faq">
             <div class ="faq-box">
+                <asp:Menu ID="naviMenu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Support" NavigateUrl="~/Support/Support.aspx"></asp:MenuItem>
+                            <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
+                            <asp:MenuItem Text="FAQ" NavigateUrl="~/Support/FAQ.aspx"></asp:MenuItem>
+                            <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
+                            <asp:MenuItem Text="Guidelines" NavigateUrl="~/Support/Guideline.aspx"></asp:MenuItem>
+                            <asp:MenuItem SeparatorImageUrl="../Images/separatorline.png"></asp:MenuItem>
+                            <asp:MenuItem Text="Rules" NavigateUrl="~/Support/Rules.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
                 <h2 class="faq-title"><%: Title %></h2>
                 <div class ="faq-content">
                     <br/> På denne side kan du læse om hvilke "frequent asked questions" vi har i forbindelse med brug af dette produkt<br/><br />

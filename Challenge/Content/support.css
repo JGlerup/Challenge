@@ -36,3 +36,22 @@
     float: left;
     margin: 25px 40px 0 40px;
 }
+
+.support #MainContent_naviMenu {
+        position: absolute;
+        margin: -60px 0 0 17px;
+        color: #202b36;
+    }
+
+.support #MainContent_naviMenu a {
+        color: #202b36;
+    }
+
+.support #MainContent_naviMenu a:visited {
+        color: #202b36;
+        text-decoration: none;
+}
+
+.support #MainContent_naviMenu a:hover {
+        text-decoration: underline;
+}
