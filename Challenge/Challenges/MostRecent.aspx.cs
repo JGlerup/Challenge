@@ -24,7 +24,6 @@ namespace Challenge.Challenges
             {
                 literalVideo.Text += "<tr><th>" + Path.GetFileName(currentFile) + "</th></tr><tr><th><video width='320' height='240' controls><source src='http://localhost:52326/Video/" + this.Page.User.Identity.Name + "\\" + Path.GetFileName(currentFile) + "' type='video/mp4'></video></th>";
 
-
             }
             literalVideo.Text += "</tbody></table>";
 
